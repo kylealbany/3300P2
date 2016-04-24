@@ -18,25 +18,54 @@ var height = 500;
 
 var projection = d3.geo.albersUsa();
 
-var path = d3.geo.path().projection(projection);
+var path = d3.geo.path()
+	.projection(projection);
+
 var svg = d3.select("#map").append("svg")
     .attr("width", width)
     .attr("height", height);
 
+var g = svg.append("g");
 
-d3.json("us.json", function(error, state) {
+d3.json("us.json", function(error, us) {
 
-	var stateObjects = state;
-	var states = topojson.feature(state, state.objects.states).features;
+
+	svg.append("g")
+	    .selectAll("path")
+    	    .data(topojson.feature(us, us.objects.counties).features)
+    	.enter().append("path")
+        	.attr("d", path)
+        	.style("fill", "cccccc")
+        	.style("stroke", "888888")
+        	.on('mousedown.log', countyClicked);
+
+	svg.append("g")
+	    .selectAll("path")
+    	    .data(topojson.feature(us, us.objects.states).features)
+    	.enter().append("path")
+        	.attr("d", path)
+        	.style("fill", "cccccc")
+        	.style("stroke", "888888")
+        	.on('mousedown.log', stateClicked);
 	
-	states.forEach(function (state) {
-		svg.append("path").attr("d", path(state))
-		.style("fill", "#ccc")
-		.style("stroke", "#888");
-	});
-	
-
 });
+
+var currentState;
+
+function stateClicked(d) {
+
+	if(currentState != null){
+		currentState.attr("display", "initial");
+	}
+	
+	currentState = d3.select(this);
+	currentState.attr("display", "none");
+}
+
+function countyClicked(d){
+	console.log(d.id);
+}
+
 
 </script>
 </body>
