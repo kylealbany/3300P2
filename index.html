@@ -1,8 +1,4 @@
 <html>
-<title>
-CS 3300 Project 2
-</title>
-
 <head>
     <title>Voting Records & Region Demographics</title>
 <!-- Load the d3 library. -->
@@ -15,7 +11,35 @@ CS 3300 Project 2
 </head>
 
 <body>
-<div id="map"></div>
+
+
+
+
+<div class="body-wrapper">
+    <div id="title-card">
+        <h1> Voting Records and Region Demographics </h1>
+        <hr>
+        <h3> An Interactive View into American Political Alignments </h3>
+    </div>
+    <div id="paragraph">
+        <p> This is an introductory paragraph that will explain a few things before we go
+        into our main plot. It could potentially explain how to use the graph, and maybe 
+        even the rationale as to why we are doing this data visualization in the first place.</p>
+    </div>
+    <div id="mapholder">
+        <div id="map">
+        </div>
+        <div id="info-box">
+            <p> The information box. </p>
+            <p> Provides the on click/on hover information of the currently
+            selected state or county.</p>
+        </div>
+    </div>
+</div>
+<div class="body-wrapper">
+    <hr>
+    <p> Bonus stats if we want them... </p>
+</div>
 
 <script>
 var width = 1000;
@@ -45,33 +69,5 @@ d3.json("us.json", function(error, state) {
 });
 
 </script>
-
-
-<div class="body-wrapper">
-    <div id="title-card">
-        <h1> Voting Records and Region Demographics </h1>
-        <hr>
-        <h3> An Interactive View into American Political Alignments </h3>
-    </div>
-    <div id="paragraph">
-        <p> This is an introductory paragraph that will explain a few things before we go
-        into our main plot. It could potentially explain how to use the graph, and maybe 
-        even the rationale as to why we are doing this data visualization in the first place.</p>
-    </div>
-    <div id="mapholder">
-        <div id="map-box">
-            <svg height='600' width='1000'>
-        </div>
-        <div id="info-box">
-            <p> The information box. </p>
-            <p> Provides the on click/on hover information of the currently
-            selected state or county.</p>
-        </div>
-    </div>
-</div>
-<div class="body-wrapper">
-    <hr>
-    <p> Bonus stats if we want them... </p>
-</div>
 </body>
 </html>
