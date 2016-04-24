@@ -1,0 +1,39 @@
+<title>
+CS 3300 Project 2
+</title>
+
+<head>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+</head>
+
+<div id="map"></div>
+
+<script>
+var width = 1000;
+var height = 500;
+
+
+var projection = d3.geo.albersUsa();
+
+var path = d3.geo.path().projection(projection);
+var svg = d3.select("#map").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+
+d3.json("us.json", function(error, state) {
+
+	var stateObjects = state;
+	var states = topojson.feature(state, state.objects.states).features;
+	
+	states.forEach(function (state) {
+		svg.append("path").attr("d", path(state))
+		.style("fill", "#ccc")
+		.style("stroke", "#888");
+	});
+	
+
+});
+
+</script>
