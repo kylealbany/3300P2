@@ -1,107 +1,74 @@
-#body_wrapper{
-    width:1200px;
-    height:3700px;
+body{
+    background-color:#F8F8F8;
+    margin:50px;
+    font-family: 'Bitter', serif;
+}
+.body-wrapper{
+    width:1600px;
+    height:auto;
     margin-right:auto;
     margin-left:auto;
-
-
-    background-color:#fff;
+}
+#title-card{
+    width:1000px;
+    height:auto;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:50px;
+    background-color:white;
     
+    padding:30px;
+    box-shadow:0px 3px 4px #808080;
+}
+
+#paragraph{
+    width:1200px;
+    height:auto;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:50px;
+}
+
+#mapholder{
+    width:1500px;
+    height:700px;
+    margin:25px 50px;
+    background-color:white;
+}
+
+#map-box{
+    width:1000px;
+    height:600px;
+    float:left;
+    margin:0px 0px;
+}
+#info-box{
+    width:400px;
+    height:600px;
+    float:left;
+    margin:0px 50px;
+}
+hr{
+    margin-top:50px;
 }
 h1 {
     text-align:center;
 	font-size: 45px;
-	font-family: 'Titillium Web', sans-serif;
 	color: #000;
-}
-h2 {
-	font-size: 25pt;
-	font-family: 'Titillium Web', sans-serif;
-	color: #000;
-    padding-left:30px;
 }
 h3 {
-	font-family: 'Titillium Web', sans-serif;
     text-align:center;
 	font-size: 20pt;
 }
 
-body {
-
-    font-family: "Helvetica"; 
-	margin: 50px;
-	padding-bottom: 100px;
-}
 svg { 
     background-color: #fff; 
-	margin-bottom: 30px;
 }
 
 p{
 	font-size: 20px;
-	font-family: "Helvetica";
 	color: gray;
     margin:auto;
     padding-left:30px;
     padding-right:30px;
-}
-
-
-
-
-
-
-#graph2014, #graph2015, #graph2013, #graph2012, #graph2011, #graph2010, #graph2009, #graph2008, #graph2007, #graph2006, #graph2004, #graph2003, #graph2002, #graph2001 {
-	float: left;
-	margin: auto;
-	width: 200px;
-}
-
-#goalsGraph, #PIMmins {
-	margin: auto;
-	margin-top: 30px;
-    width:750px;
-}
-
-#goalsGraph p {
-	width: 70%
-}
-
-#percentageChange {
-    padding-top:30px;
-	margin: auto;
-	width: 35%;
-}
-
-#percentageChange svg {
-	margin-bottom: 0px;
-}
-
-#percentageChange p {
-	width: 70%;
-	padding-bottom: 50px;
-}
-
-#stanelyCup {
-	float: left;
-	margin: auto;
-	width: 100%;
-}
-#key {
-    padding-top:20px;
-    padding-left:30px;
-}
-
-
-.axis text {
-  	font: 10px "Helvetica";
-  	color: #C0C0C0;
-}
-.axis path {
-  	fill: none;
-  	stroke: #C0C0C0;
-  	shape-rendering: crispEdges;
-}
-.axis line {
-	stroke: #C0C0C0;
 }
