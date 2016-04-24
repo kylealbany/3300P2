@@ -64,7 +64,7 @@ var g = svg.append("g");
 d3.json("us.json", function(error, us) {
 
 
-	svg.append("g")
+	g.append("g")
 	    .selectAll("path")
     	    .data(topojson.feature(us, us.objects.counties).features)
     	.enter().append("path")
@@ -73,7 +73,7 @@ d3.json("us.json", function(error, us) {
         	.style("stroke", "888888")
         	.on('mousedown.log', countyClicked);
 
-	svg.append("g")
+	g.append("g")
 	    .selectAll("path")
     	    .data(topojson.feature(us, us.objects.states).features)
     	.enter().append("path")
@@ -87,6 +87,8 @@ d3.json("us.json", function(error, us) {
 var currentState;
 
 function stateClicked(d) {
+	var x, y;
+	var zoom = 3;
 
 	if(currentState != null){
 		currentState.attr("display", "initial");
@@ -94,6 +96,15 @@ function stateClicked(d) {
 	
 	currentState = d3.select(this);
 	currentState.attr("display", "none");
+
+    var centroid = path.centroid(d);
+    x = centroid[0];
+    y = centroid[1];
+
+	g.transition()
+      .duration(1000)
+      .attr("transform", "translate(" + width/2 + "," + height/2 + ")scale(" + zoom + ")translate(" + -x + "," + -y + ")");
+
 }
 
 function countyClicked(d){
