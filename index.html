@@ -102,8 +102,17 @@ function stateClicked(d) {
 
 function countyClicked(d){
 	console.log(d.id);
+
+	g.transition()
+      .duration(1000)
+      .attr("transform", "scale(" + 1 + ")");
 }
 
+function zoomOut(){
+	g.transition()
+      .duration(1000)
+      .attr("transform", "scale(" + 1 + ")");
+}
 
 </script>
 </body>
