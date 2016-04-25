@@ -63,7 +63,7 @@ var svg = d3.select("#map").append("svg")
 var zoom = d3.behavior.zoom()
     .translate(projection.translate())
     .scale(projection.scale())
-    .scaleExtent([height, 8 * height])
+    .scaleExtent([2*height, 8 * height])
     .on("zoom", zoomed);
 
 var g = svg.append("g")
