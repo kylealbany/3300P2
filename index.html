@@ -88,7 +88,9 @@ d3.json("us.json", function(error, us) {
 });
 
 var currentState;
+var currentCounty;
 
+//Zoom in to county view of state when it is clicked
 function stateClicked(d) {
 	var x, y;
 	var zoom = 3;
@@ -111,6 +113,7 @@ function stateClicked(d) {
 
 }
 
+//Change function later, currently zooms out to state view and logs county id when clicked
 function countyClicked(d){
 	console.log(d.id);
 
@@ -124,6 +127,13 @@ function countyClicked(d){
       .attr("transform", "scale(" + 1 + ")");
 }
 
+//Color in the county that is clicked on
+function colorCounty(d){
+	currentCounty = d3.select(this);
+	currentCounty.style("fill", "FF0000");
+}
+
+//Currently just a copy of the functionality for countyClicked to zoom back to state level
 function zoomOut(){
 
 	if(currentState != null){
@@ -135,6 +145,7 @@ function zoomOut(){
       .attr("transform", "scale(" + 1 + ")");
 }
 
+//Used for d3 mousewheel scrolling
 function zoomed() {
   projection.translate(d3.event.translate).scale(d3.event.scale);
   g.selectAll("path").attr("d", path);
