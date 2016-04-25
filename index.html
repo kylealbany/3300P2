@@ -50,7 +50,8 @@ var width = 1000;
 var height = 500;
 
 
-var projection = d3.geo.albersUsa();
+var projection = d3.geo.albersUsa()
+	.scale(1000);
 
 var path = d3.geo.path()
 	.projection(projection);
@@ -59,7 +60,14 @@ var svg = d3.select("#map").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-var g = svg.append("g");
+var zoom = d3.behavior.zoom()
+    .translate(projection.translate())
+    .scale(projection.scale())
+    .scaleExtent([height, 8 * height])
+    .on("zoom", zoomed);
+
+var g = svg.append("g")
+	.call(zoom);
 
 d3.json("us.json", function(error, us) {
 
@@ -81,7 +89,8 @@ d3.json("us.json", function(error, us) {
         	.style("fill", "cccccc")
         	.style("stroke", "888888")
         	.on('mousedown.log', stateClicked);
-	
+
+
 });
 
 var currentState;
@@ -105,10 +114,16 @@ function stateClicked(d) {
       .duration(1000)
       .attr("transform", "translate(" + width/2 + "," + height/2 + ")scale(" + zoom + ")translate(" + -x + "," + -y + ")");
 
+
 }
 
 function countyClicked(d){
 	console.log(d.id);
+
+
+	if(currentState != null){
+		currentState.attr("display", "initial");
+	}
 
 	g.transition()
       .duration(1000)
@@ -116,10 +131,22 @@ function countyClicked(d){
 }
 
 function zoomOut(){
+
+	if(currentState != null){
+		currentState.attr("display", "initial");
+	}
+
 	g.transition()
       .duration(1000)
       .attr("transform", "scale(" + 1 + ")");
 }
+
+function zoomed() {
+  projection.translate(d3.event.translate).scale(d3.event.scale);
+  g.selectAll("path").attr("d", path);
+}
+
+
 
 </script>
 </body>
