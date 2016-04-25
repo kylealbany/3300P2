@@ -10,6 +10,19 @@
     <link href='stylesheet.css' rel='stylesheet' type='text/css'>
 <!-- Jquery & JS links go here -->
 
+<!-- Load the Master JSON file  & Restructure it -->
+    <script>
+    var globalData;
+    d3.json("summarypretty.json", function(error, data){
+        if(error){
+            console.log(error);
+        }
+        globalJSON = data;
+    });
+    
+    var globalJSON;
+    
+    </script>
 </head>
 
 <body>
@@ -31,6 +44,7 @@
         <div id="info-box">
             <p> Filtering Options </p>
                 <div id="slider"></div>
+                <div id="dynamic-data"></div>
         </div>
     </div>
 </div>
@@ -125,6 +139,10 @@ function countyClicked(d){
 	g.transition()
       .duration(1000)
       .attr("transform", "scale(" + 1 + ")");
+      
+    // Write county info to the infobox
+    var infobox = d3.select("#dynamic-data");
+    
 }
 
 //Color in the county that is clicked on
