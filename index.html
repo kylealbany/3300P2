@@ -88,18 +88,56 @@ d3.json("us.json", function(error, us) {
     	    .data(topojson.feature(us, us.objects.counties).features)
     	.enter().append("path")
         	.attr("d", path)
-        	.style("fill", "cccccc")
+        	.style("fill", function(d) {
+        		var obj = globalArray[d.id];
+        		if(obj == null){
+        			return "cccccc";
+        		}
+        		if(obj["Party1"] == "Dem"){
+        			//Dem win
+        			if(parseInt(obj["Votes1"])>parseInt(obj["Votes2"])){
+        				return "0000ff";
+        			}
+        			//GOP win
+        			else if(parseInt(obj["Votes2"])>parseInt(obj["Votes1"])){
+        				return "ff0000";
+        			}
+        			//Other win
+        			else{
+						return "006600";
+        			}
+        		}
+        		else if(obj["Party1"] == "GOP"){
+        			//GOP win
+        			if(parseInt(obj["Votes1"])>parseInt(obj["Votes2"])){
+        				return "ff0000";
+        			}
+        			//Dem win
+        			else if(parseInt(obj["Votes2"])>parseInt(obj["Votes1"])){
+        				return "0000ff";
+        			}
+        			//Other win
+        			else{
+        				return "006600";
+        			}
+        		}
+        		else{
+        			console.log("Party didn't match");
+        			console.log(obj);
+        			console.log(d.id);
+        		}
+        	 })
         	.style("stroke", "888888")
         	.on('mousedown.log', countyClicked);
 
-	g.append("g")
-	    .selectAll("path")
-    	    .data(topojson.feature(us, us.objects.states).features)
-    	.enter().append("path")
-        	.attr("d", path)
-        	.style("fill", "cccccc")
-        	.style("stroke", "888888")
-        	.on('mousedown.log', stateClicked);
+	// g.append("g")
+	//     .selectAll("path")
+ //    	    .data(topojson.feature(us, us.objects.states).features)
+ //    	.enter().append("path")
+ //        	.attr("d", path)
+ //        	.style("fill", "cccccc")
+ //        	.style("stroke", "888888")
+ //        	.on('mousedown.log', stateClicked);
 
 
 });
