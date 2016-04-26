@@ -9,7 +9,7 @@
     "TOTAL VOTES CAST": "220596",
     "State Postal": "AK",
     "Median Household Income": "66,503",
-    "County FIPS Code": "200",
+    "County FIPS Code": "2000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Alaska"
@@ -24,7 +24,7 @@
     "TOTAL VOTES CAST": "2064699",
     "State Postal": "AL",
     "Median Household Income": "41,610",
-    "County FIPS Code": "100",
+    "County FIPS Code": "1000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Alabama"
@@ -39,7 +39,7 @@
     "TOTAL VOTES CAST": "23909",
     "State Postal": "AL",
     "Median Household Income": "51,441",
-    "County FIPS Code": "101",
+    "County FIPS Code": "1001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Autauga"
@@ -54,7 +54,7 @@
     "TOTAL VOTES CAST": "84988",
     "State Postal": "AL",
     "Median Household Income": "48,867",
-    "County FIPS Code": "103",
+    "County FIPS Code": "1003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Baldwin"
@@ -69,7 +69,7 @@
     "TOTAL VOTES CAST": "11459",
     "State Postal": "AL",
     "Median Household Income": "30,287",
-    "County FIPS Code": "105",
+    "County FIPS Code": "1005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Barbour"
@@ -84,7 +84,7 @@
     "TOTAL VOTES CAST": "8391",
     "State Postal": "AL",
     "Median Household Income": "37,392",
-    "County FIPS Code": "107",
+    "County FIPS Code": "1007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Bibb"
@@ -99,7 +99,7 @@
     "TOTAL VOTES CAST": "23980",
     "State Postal": "AL",
     "Median Household Income": "44,225",
-    "County FIPS Code": "109",
+    "County FIPS Code": "1009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Blount"
@@ -1044,7 +1044,7 @@
     "TOTAL VOTES CAST": "1062831",
     "State Postal": "AR",
     "Median Household Income": "40,151",
-    "County FIPS Code": "500",
+    "County FIPS Code": "5000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Arkansas"
@@ -1059,7 +1059,7 @@
     "TOTAL VOTES CAST": "7915",
     "State Postal": "AR",
     "Median Household Income": "39,276",
-    "County FIPS Code": "503",
+    "County FIPS Code": "5003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Ashley"
@@ -1074,7 +1074,7 @@
     "TOTAL VOTES CAST": "19339",
     "State Postal": "AR",
     "Median Household Income": "35,315",
-    "County FIPS Code": "505",
+    "County FIPS Code": "5005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Baxter"
@@ -1089,7 +1089,7 @@
     "TOTAL VOTES CAST": "77525",
     "State Postal": "AR",
     "Median Household Income": "52,717",
-    "County FIPS Code": "507",
+    "County FIPS Code": "5007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Benton"
@@ -1104,7 +1104,7 @@
     "TOTAL VOTES CAST": "15363",
     "State Postal": "AR",
     "Median Household Income": "35,848",
-    "County FIPS Code": "509",
+    "County FIPS Code": "5009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Boone"
@@ -1884,7 +1884,7 @@
     "TOTAL VOTES CAST": "2041519",
     "State Postal": "AZ",
     "Median Household Income": "47,796",
-    "County FIPS Code": "400",
+    "County FIPS Code": "4000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Arizona"
@@ -1899,7 +1899,7 @@
     "TOTAL VOTES CAST": "25465",
     "State Postal": "AZ",
     "Median Household Income": "32,886",
-    "County FIPS Code": "401",
+    "County FIPS Code": "4001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Apache"
@@ -1914,7 +1914,7 @@
     "TOTAL VOTES CAST": "43776",
     "State Postal": "AZ",
     "Median Household Income": "43,017",
-    "County FIPS Code": "403",
+    "County FIPS Code": "4003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Cochise"
@@ -1929,7 +1929,7 @@
     "TOTAL VOTES CAST": "46746",
     "State Postal": "AZ",
     "Median Household Income": "45,509",
-    "County FIPS Code": "405",
+    "County FIPS Code": "4005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Coconino"
@@ -1944,7 +1944,7 @@
     "TOTAL VOTES CAST": "18477",
     "State Postal": "AZ",
     "Median Household Income": "38,267",
-    "County FIPS Code": "407",
+    "County FIPS Code": "4007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Gila"
@@ -1959,7 +1959,7 @@
     "TOTAL VOTES CAST": "11854",
     "State Postal": "AZ",
     "Median Household Income": "41,080",
-    "County FIPS Code": "409",
+    "County FIPS Code": "4009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Graham"
@@ -2124,7 +2124,7 @@
     "TOTAL VOTES CAST": "10538656",
     "State Postal": "CA",
     "Median Household Income": "58,322",
-    "County FIPS Code": "600",
+    "County FIPS Code": "6000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "California"
@@ -2139,7 +2139,7 @@
     "TOTAL VOTES CAST": "558386",
     "State Postal": "CA",
     "Median Household Income": "70,209",
-    "County FIPS Code": "601",
+    "County FIPS Code": "6001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Alameda"
@@ -2154,7 +2154,7 @@
     "TOTAL VOTES CAST": "647",
     "State Postal": "CA",
     "Median Household Income": "46,336",
-    "County FIPS Code": "603",
+    "County FIPS Code": "6003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Alpine"
@@ -2169,7 +2169,7 @@
     "TOTAL VOTES CAST": "15303",
     "State Postal": "CA",
     "Median Household Income": "51,388",
-    "County FIPS Code": "605",
+    "County FIPS Code": "6005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Amador"
@@ -2184,7 +2184,7 @@
     "TOTAL VOTES CAST": "70163",
     "State Postal": "CA",
     "Median Household Income": "40,748",
-    "County FIPS Code": "607",
+    "County FIPS Code": "6007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Butte"
@@ -2199,7 +2199,7 @@
     "TOTAL VOTES CAST": "18469",
     "State Postal": "CA",
     "Median Household Income": "50,962",
-    "County FIPS Code": "609",
+    "County FIPS Code": "6009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Calaveras"
@@ -2979,7 +2979,7 @@
     "TOTAL VOTES CAST": "2419698",
     "State Postal": "CO",
     "Median Household Income": "56,880",
-    "County FIPS Code": "800",
+    "County FIPS Code": "8000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Colorado"
@@ -2994,7 +2994,7 @@
     "TOTAL VOTES CAST": "161495",
     "State Postal": "CO",
     "Median Household Income": "55,695",
-    "County FIPS Code": "801",
+    "County FIPS Code": "8001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Adams"
@@ -3009,7 +3009,7 @@
     "TOTAL VOTES CAST": "6671",
     "State Postal": "CO",
     "Median Household Income": "37,731",
-    "County FIPS Code": "803",
+    "County FIPS Code": "8003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Alamosa"
@@ -3024,7 +3024,7 @@
     "TOTAL VOTES CAST": "254746",
     "State Postal": "CO",
     "Median Household Income": "60,525",
-    "County FIPS Code": "805",
+    "County FIPS Code": "8005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Arapahoe"
@@ -3039,7 +3039,7 @@
     "TOTAL VOTES CAST": "6646",
     "State Postal": "CO",
     "Median Household Income": "46,127",
-    "County FIPS Code": "807",
+    "County FIPS Code": "8007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Archuleta"
@@ -3054,7 +3054,7 @@
     "TOTAL VOTES CAST": "2096",
     "State Postal": "CO",
     "Median Household Income": "37,775",
-    "County FIPS Code": "809",
+    "County FIPS Code": "8009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Baca"
@@ -3819,7 +3819,7 @@
     "TOTAL VOTES CAST": "1562187",
     "State Postal": "CT",
     "Median Household Income": "67,275",
-    "County FIPS Code": "900",
+    "County FIPS Code": "9000",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Connecticut"
@@ -3834,7 +3834,7 @@
     "TOTAL VOTES CAST": "24088",
     "State Postal": "CT",
     "Median Household Income": "53,670",
-    "County FIPS Code": "905",
+    "County FIPS Code": "9005",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Bristol"
@@ -3849,7 +3849,7 @@
     "TOTAL VOTES CAST": "5098",
     "State Postal": "CT",
     "Median Household Income": "74,285",
-    "County FIPS Code": "905",
+    "County FIPS Code": "9005",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Burlington"
@@ -3864,7 +3864,7 @@
     "TOTAL VOTES CAST": "14812",
     "State Postal": "CT",
     "Median Household Income": "54,819",
-    "County FIPS Code": "905",
+    "County FIPS Code": "9005",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Cheshire"
@@ -3924,7 +3924,7 @@
     "TOTAL VOTES CAST": "3975",
     "State Postal": "CT",
     "Median Household Income": "67,408",
-    "County FIPS Code": "909",
+    "County FIPS Code": "9009",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Essex"
@@ -3939,7 +3939,7 @@
     "TOTAL VOTES CAST": "29933",
     "State Postal": "CT",
     "Median Household Income": "79,536",
-    "County FIPS Code": "901",
+    "County FIPS Code": "9001",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Fairfield"
@@ -3999,7 +3999,7 @@
     "TOTAL VOTES CAST": "34037",
     "State Postal": "CT",
     "Median Household Income": "63,374",
-    "County FIPS Code": "903",
+    "County FIPS Code": "9003",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Hartford"
@@ -4014,7 +4014,7 @@
     "TOTAL VOTES CAST": "1706",
     "State Postal": "CT",
     "Median Household Income": "51,695",
-    "County FIPS Code": "901",
+    "County FIPS Code": "9001",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Kent"
@@ -4044,7 +4044,7 @@
     "TOTAL VOTES CAST": "4632",
     "State Postal": "CT",
     "Median Household Income": "67,746",
-    "County FIPS Code": "905",
+    "County FIPS Code": "9005",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Litchfield"
@@ -4074,7 +4074,7 @@
     "TOTAL VOTES CAST": "44643",
     "State Postal": "CT",
     "Median Household Income": "59,217",
-    "County FIPS Code": "909",
+    "County FIPS Code": "9009",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "New Haven"
@@ -4374,7 +4374,7 @@
     "TOTAL VOTES CAST": "243348",
     "State Postal": "DC",
     "Median Household Income": "65,231",
-    "County FIPS Code": "1100",
+    "County FIPS Code": "11000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "District of Columbia"
@@ -4389,7 +4389,7 @@
     "TOTAL VOTES CAST": "413844",
     "State Postal": "DE",
     "Median Household Income": "58,326",
-    "County FIPS Code": "1000",
+    "County FIPS Code": "10000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Delaware"
@@ -4404,7 +4404,7 @@
     "TOTAL VOTES CAST": "251960",
     "State Postal": "DE",
     "Median Household Income": "62,086",
-    "County FIPS Code": "1003",
+    "County FIPS Code": "10003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "New Castle"
@@ -4419,7 +4419,7 @@
     "TOTAL VOTES CAST": "93215",
     "State Postal": "DE",
     "Median Household Income": "48,684",
-    "County FIPS Code": "1005",
+    "County FIPS Code": "10005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Sussex"
@@ -4434,7 +4434,7 @@
     "TOTAL VOTES CAST": "8470205",
     "State Postal": "FL",
     "Median Household Income": "45,006",
-    "County FIPS Code": "1200",
+    "County FIPS Code": "12000",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Florida"
@@ -4449,7 +4449,7 @@
     "TOTAL VOTES CAST": "120318",
     "State Postal": "FL",
     "Median Household Income": "41,297",
-    "County FIPS Code": "1201",
+    "County FIPS Code": "12001",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Alachua"
@@ -4464,7 +4464,7 @@
     "TOTAL VOTES CAST": "11366",
     "State Postal": "FL",
     "Median Household Income": "45,721",
-    "County FIPS Code": "1203",
+    "County FIPS Code": "12003",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Baker"
@@ -4479,7 +4479,7 @@
     "TOTAL VOTES CAST": "79834",
     "State Postal": "FL",
     "Median Household Income": "45,259",
-    "County FIPS Code": "1205",
+    "County FIPS Code": "12005",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Bay"
@@ -4494,7 +4494,7 @@
     "TOTAL VOTES CAST": "11631",
     "State Postal": "FL",
     "Median Household Income": "38,680",
-    "County FIPS Code": "1207",
+    "County FIPS Code": "12007",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Bradford"
@@ -4509,7 +4509,7 @@
     "TOTAL VOTES CAST": "285504",
     "State Postal": "FL",
     "Median Household Income": "46,332",
-    "County FIPS Code": "1209",
+    "County FIPS Code": "12009",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Brevard"
@@ -5169,7 +5169,7 @@
     "TOTAL VOTES CAST": "3877038",
     "State Postal": "GA",
     "Median Household Income": "47,125",
-    "County FIPS Code": "1300",
+    "County FIPS Code": "13000",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Georgia"
@@ -5184,7 +5184,7 @@
     "TOTAL VOTES CAST": "7079",
     "State Postal": "GA",
     "Median Household Income": "35,757",
-    "County FIPS Code": "1301",
+    "County FIPS Code": "13001",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Appling"
@@ -5199,7 +5199,7 @@
     "TOTAL VOTES CAST": "2902",
     "State Postal": "GA",
     "Median Household Income": "28,693",
-    "County FIPS Code": "1303",
+    "County FIPS Code": "13003",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Atkinson"
@@ -5214,7 +5214,7 @@
     "TOTAL VOTES CAST": "3929",
     "State Postal": "GA",
     "Median Household Income": "32,460",
-    "County FIPS Code": "1305",
+    "County FIPS Code": "13005",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Bacon"
@@ -6789,7 +6789,7 @@
     "TOTAL VOTES CAST": "429494",
     "State Postal": "HI",
     "Median Household Income": "66,086",
-    "County FIPS Code": "1500",
+    "County FIPS Code": "15000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Hawaii"
@@ -6804,7 +6804,7 @@
     "TOTAL VOTES CAST": "292925",
     "State Postal": "HI",
     "Median Household Income": "70,779",
-    "County FIPS Code": "1503",
+    "County FIPS Code": "15003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Honolulu"
@@ -6819,7 +6819,7 @@
     "TOTAL VOTES CAST": "25369",
     "State Postal": "HI",
     "Median Household Income": "55,614",
-    "County FIPS Code": "1507",
+    "County FIPS Code": "15007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Kauai"
@@ -6834,7 +6834,7 @@
     "TOTAL VOTES CAST": "48547",
     "State Postal": "HI",
     "Median Household Income": "59,281",
-    "County FIPS Code": "1509",
+    "County FIPS Code": "15009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Maui"
@@ -6849,7 +6849,7 @@
     "TOTAL VOTES CAST": "1565968",
     "State Postal": "IA",
     "Median Household Income": "50,997",
-    "County FIPS Code": "1900",
+    "County FIPS Code": "19000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Iowa"
@@ -6864,7 +6864,7 @@
     "TOTAL VOTES CAST": "3959",
     "State Postal": "IA",
     "Median Household Income": "46,917",
-    "County FIPS Code": "1901",
+    "County FIPS Code": "19001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Adair"
@@ -6879,7 +6879,7 @@
     "TOTAL VOTES CAST": "6824",
     "State Postal": "IA",
     "Median Household Income": "45,923",
-    "County FIPS Code": "1905",
+    "County FIPS Code": "19005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Allamakee"
@@ -6894,7 +6894,7 @@
     "TOTAL VOTES CAST": "6176",
     "State Postal": "IA",
     "Median Household Income": "38,685",
-    "County FIPS Code": "1907",
+    "County FIPS Code": "19007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Appanoose"
@@ -6909,7 +6909,7 @@
     "TOTAL VOTES CAST": "3439",
     "State Postal": "IA",
     "Median Household Income": "47,823",
-    "County FIPS Code": "1909",
+    "County FIPS Code": "19009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Audubon"
@@ -7569,7 +7569,7 @@
     "TOTAL VOTES CAST": "651871",
     "State Postal": "ID",
     "Median Household Income": "45,296",
-    "County FIPS Code": "1600",
+    "County FIPS Code": "16000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Idaho"
@@ -7584,7 +7584,7 @@
     "TOTAL VOTES CAST": "180361",
     "State Postal": "ID",
     "Median Household Income": "54,337",
-    "County FIPS Code": "1601",
+    "County FIPS Code": "16001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Ada"
@@ -7599,7 +7599,7 @@
     "TOTAL VOTES CAST": "35260",
     "State Postal": "ID",
     "Median Household Income": "42,993",
-    "County FIPS Code": "1605",
+    "County FIPS Code": "16005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Bannock"
@@ -7614,7 +7614,7 @@
     "TOTAL VOTES CAST": "2822",
     "State Postal": "ID",
     "Median Household Income": "42,134",
-    "County FIPS Code": "1607",
+    "County FIPS Code": "16007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Bear Lake"
@@ -7629,7 +7629,7 @@
     "TOTAL VOTES CAST": "3884",
     "State Postal": "ID",
     "Median Household Income": "40,069",
-    "County FIPS Code": "1609",
+    "County FIPS Code": "16009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Benewah"
@@ -8064,7 +8064,7 @@
     "TOTAL VOTES CAST": "5091061",
     "State Postal": "IL",
     "Median Household Income": "55,126",
-    "County FIPS Code": "1700",
+    "County FIPS Code": "17000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Illinois"
@@ -8079,7 +8079,7 @@
     "TOTAL VOTES CAST": "3495",
     "State Postal": "IL",
     "Median Household Income": "28,933",
-    "County FIPS Code": "1703",
+    "County FIPS Code": "17003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Alexander"
@@ -8094,7 +8094,7 @@
     "TOTAL VOTES CAST": "7316",
     "State Postal": "IL",
     "Median Household Income": "46,639",
-    "County FIPS Code": "1705",
+    "County FIPS Code": "17005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Bond"
@@ -8109,7 +8109,7 @@
     "TOTAL VOTES CAST": "2362",
     "State Postal": "IL",
     "Median Household Income": "46,481",
-    "County FIPS Code": "1709",
+    "County FIPS Code": "17009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Brown"
@@ -8784,7 +8784,7 @@
     "TOTAL VOTES CAST": "2602883",
     "State Postal": "IN",
     "Median Household Income": "46,954",
-    "County FIPS Code": "1800",
+    "County FIPS Code": "18000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Indiana"
@@ -8799,7 +8799,7 @@
     "TOTAL VOTES CAST": "146405",
     "State Postal": "IN",
     "Median Household Income": "48,795",
-    "County FIPS Code": "1803",
+    "County FIPS Code": "18003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Allen"
@@ -8814,7 +8814,7 @@
     "TOTAL VOTES CAST": "29313",
     "State Postal": "IN",
     "Median Household Income": "53,475",
-    "County FIPS Code": "1805",
+    "County FIPS Code": "18005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Bartholomew"
@@ -8829,7 +8829,7 @@
     "TOTAL VOTES CAST": "4740",
     "State Postal": "IN",
     "Median Household Income": "38,927",
-    "County FIPS Code": "1809",
+    "County FIPS Code": "18009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Blackford"
@@ -9369,7 +9369,7 @@
     "TOTAL VOTES CAST": "1131244",
     "State Postal": "KS",
     "Median Household Income": "50,140",
-    "County FIPS Code": "2000",
+    "County FIPS Code": "20000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Kansas"
@@ -9384,7 +9384,7 @@
     "TOTAL VOTES CAST": "3274",
     "State Postal": "KS",
     "Median Household Income": "42,424",
-    "County FIPS Code": "2003",
+    "County FIPS Code": "20003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Anderson"
@@ -9399,7 +9399,7 @@
     "TOTAL VOTES CAST": "6499",
     "State Postal": "KS",
     "Median Household Income": "43,253",
-    "County FIPS Code": "2005",
+    "County FIPS Code": "20005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Atchison"
@@ -9414,7 +9414,7 @@
     "TOTAL VOTES CAST": "2282",
     "State Postal": "KS",
     "Median Household Income": "47,811",
-    "County FIPS Code": "2007",
+    "County FIPS Code": "20007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Barber"
@@ -9429,7 +9429,7 @@
     "TOTAL VOTES CAST": "12010",
     "State Postal": "KS",
     "Median Household Income": "43,371",
-    "County FIPS Code": "2009",
+    "County FIPS Code": "20009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Barton"
@@ -10344,7 +10344,7 @@
     "TOTAL VOTES CAST": "1796736",
     "State Postal": "KY",
     "Median Household Income": "41,717",
-    "County FIPS Code": "2100",
+    "County FIPS Code": "21000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Kentucky"
@@ -10359,7 +10359,7 @@
     "TOTAL VOTES CAST": "3895",
     "State Postal": "KY",
     "Median Household Income": "41,947",
-    "County FIPS Code": "2107",
+    "County FIPS Code": "21007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Ballard"
@@ -10374,7 +10374,7 @@
     "TOTAL VOTES CAST": "16565",
     "State Postal": "KY",
     "Median Household Income": "37,211",
-    "County FIPS Code": "2109",
+    "County FIPS Code": "21009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Barren"
@@ -11184,7 +11184,7 @@
     "TOTAL VOTES CAST": "1993555",
     "State Postal": "LA",
     "Median Household Income": "42,998",
-    "County FIPS Code": "2200",
+    "County FIPS Code": "22000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Louisiana"
@@ -11304,7 +11304,7 @@
     "TOTAL VOTES CAST": "3129731",
     "State Postal": "MA",
     "Median Household Income": "65,378",
-    "County FIPS Code": "2500",
+    "County FIPS Code": "25000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Massachusetts"
@@ -11319,7 +11319,7 @@
     "TOTAL VOTES CAST": "14883",
     "State Postal": "MA",
     "Median Household Income": "43,791",
-    "County FIPS Code": "2509",
+    "County FIPS Code": "25009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Amherst"
@@ -11349,7 +11349,7 @@
     "TOTAL VOTES CAST": "8512",
     "State Postal": "MA",
     "Median Household Income": "44,748",
-    "County FIPS Code": "2505",
+    "County FIPS Code": "25005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Ashland"
@@ -11364,7 +11364,7 @@
     "TOTAL VOTES CAST": "25437",
     "State Postal": "MA",
     "Median Household Income": "58,616",
-    "County FIPS Code": "2501",
+    "County FIPS Code": "25001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Barnstable"
@@ -11379,7 +11379,7 @@
     "TOTAL VOTES CAST": "7628",
     "State Postal": "MA",
     "Median Household Income": "42,055",
-    "County FIPS Code": "2509",
+    "County FIPS Code": "25009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Bedford"
@@ -11499,7 +11499,7 @@
     "TOTAL VOTES CAST": "9450",
     "State Postal": "MA",
     "Median Household Income": "52,532",
-    "County FIPS Code": "2509",
+    "County FIPS Code": "25009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Grafton"
@@ -11844,7 +11844,7 @@
     "TOTAL VOTES CAST": "2475956",
     "State Postal": "MD",
     "Median Household Income": "71,169",
-    "County FIPS Code": "2400",
+    "County FIPS Code": "24000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Maryland"
@@ -11859,7 +11859,7 @@
     "TOTAL VOTES CAST": "27817",
     "State Postal": "MD",
     "Median Household Income": "38,670",
-    "County FIPS Code": "2401",
+    "County FIPS Code": "24001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Allegany"
@@ -11874,7 +11874,7 @@
     "TOTAL VOTES CAST": "239189",
     "State Postal": "MD",
     "Median Household Income": "87,083",
-    "County FIPS Code": "2403",
+    "County FIPS Code": "24003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Anne Arundel"
@@ -11889,7 +11889,7 @@
     "TOTAL VOTES CAST": "354655",
     "State Postal": "MD",
     "Median Household Income": "62,413",
-    "County FIPS Code": "2405",
+    "County FIPS Code": "24005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Baltimore"
@@ -11919,7 +11919,7 @@
     "TOTAL VOTES CAST": "42168",
     "State Postal": "MD",
     "Median Household Income": "87,215",
-    "County FIPS Code": "2409",
+    "County FIPS Code": "24009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Calvert"
@@ -12099,7 +12099,7 @@
     "TOTAL VOTES CAST": "710738",
     "State Postal": "ME",
     "Median Household Income": "46,856",
-    "County FIPS Code": "2300",
+    "County FIPS Code": "23000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Maine"
@@ -12114,7 +12114,7 @@
     "TOTAL VOTES CAST": "585",
     "State Postal": "ME",
     "Median Household Income": "55,120",
-    "County FIPS Code": "2301",
+    "County FIPS Code": "23001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Addison"
@@ -12129,7 +12129,7 @@
     "TOTAL VOTES CAST": "1086",
     "State Postal": "ME",
     "Median Household Income": "32,339",
-    "County FIPS Code": "2307",
+    "County FIPS Code": "23007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Anson"
@@ -12144,7 +12144,7 @@
     "TOTAL VOTES CAST": "430",
     "State Postal": "ME",
     "Median Household Income": "33,950",
-    "County FIPS Code": "2309",
+    "County FIPS Code": "23009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Athens"
@@ -12174,7 +12174,7 @@
     "TOTAL VOTES CAST": "64",
     "State Postal": "ME",
     "Median Household Income": "46,581",
-    "County FIPS Code": "2303",
+    "County FIPS Code": "23003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Aurora"
@@ -12339,7 +12339,7 @@
     "TOTAL VOTES CAST": "1613",
     "State Postal": "ME",
     "Median Household Income": "63,434",
-    "County FIPS Code": "2305",
+    "County FIPS Code": "23005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Newport"
@@ -12474,7 +12474,7 @@
     "TOTAL VOTES CAST": "4717728",
     "State Postal": "MI",
     "Median Household Income": "46,793",
-    "County FIPS Code": "2600",
+    "County FIPS Code": "26000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Michigan"
@@ -12489,7 +12489,7 @@
     "TOTAL VOTES CAST": "6086",
     "State Postal": "MI",
     "Median Household Income": "37,443",
-    "County FIPS Code": "2601",
+    "County FIPS Code": "26001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Alcona"
@@ -12504,7 +12504,7 @@
     "TOTAL VOTES CAST": "4603",
     "State Postal": "MI",
     "Median Household Income": "38,916",
-    "County FIPS Code": "2603",
+    "County FIPS Code": "26003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Alger"
@@ -12519,7 +12519,7 @@
     "TOTAL VOTES CAST": "49199",
     "State Postal": "MI",
     "Median Household Income": "50,786",
-    "County FIPS Code": "2605",
+    "County FIPS Code": "26005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Allegan"
@@ -12534,7 +12534,7 @@
     "TOTAL VOTES CAST": "14014",
     "State Postal": "MI",
     "Median Household Income": "37,330",
-    "County FIPS Code": "2607",
+    "County FIPS Code": "26007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Alpena"
@@ -12549,7 +12549,7 @@
     "TOTAL VOTES CAST": "13184",
     "State Postal": "MI",
     "Median Household Income": "42,419",
-    "County FIPS Code": "2609",
+    "County FIPS Code": "26009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Antrim"
@@ -13389,7 +13389,7 @@
     "TOTAL VOTES CAST": "2928942",
     "State Postal": "MN",
     "Median Household Income": "58,828",
-    "County FIPS Code": "2700",
+    "County FIPS Code": "27000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Minnesota"
@@ -13404,7 +13404,7 @@
     "TOTAL VOTES CAST": "9109",
     "State Postal": "MN",
     "Median Household Income": "38,871",
-    "County FIPS Code": "2701",
+    "County FIPS Code": "27001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Aitkin"
@@ -13419,7 +13419,7 @@
     "TOTAL VOTES CAST": "185714",
     "State Postal": "MN",
     "Median Household Income": "67,811",
-    "County FIPS Code": "2703",
+    "County FIPS Code": "27003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Anoka"
@@ -13434,7 +13434,7 @@
     "TOTAL VOTES CAST": "16329",
     "State Postal": "MN",
     "Median Household Income": "47,356",
-    "County FIPS Code": "2705",
+    "County FIPS Code": "27005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Becker"
@@ -13449,7 +13449,7 @@
     "TOTAL VOTES CAST": "21949",
     "State Postal": "MN",
     "Median Household Income": "42,655",
-    "County FIPS Code": "2707",
+    "County FIPS Code": "27007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Beltrami"
@@ -14304,7 +14304,7 @@
     "TOTAL VOTES CAST": "2744935",
     "State Postal": "MO",
     "Median Household Income": "45,320",
-    "County FIPS Code": "2900",
+    "County FIPS Code": "29000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Missouri"
@@ -14319,7 +14319,7 @@
     "TOTAL VOTES CAST": "8306",
     "State Postal": "MO",
     "Median Household Income": "55,638",
-    "County FIPS Code": "2903",
+    "County FIPS Code": "29003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Andrew"
@@ -14334,7 +14334,7 @@
     "TOTAL VOTES CAST": "9951",
     "State Postal": "MO",
     "Median Household Income": "38,570",
-    "County FIPS Code": "2907",
+    "County FIPS Code": "29007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Audrain"
@@ -14874,7 +14874,7 @@
     "TOTAL VOTES CAST": "14682",
     "State Postal": "MS",
     "Median Household Income": "35,583",
-    "County FIPS Code": "2803",
+    "County FIPS Code": "28003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Alcorn"
@@ -14889,7 +14889,7 @@
     "TOTAL VOTES CAST": "7661",
     "State Postal": "MS",
     "Median Household Income": "32,724",
-    "County FIPS Code": "2805",
+    "County FIPS Code": "28005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Amite"
@@ -14904,7 +14904,7 @@
     "TOTAL VOTES CAST": "7853",
     "State Postal": "MS",
     "Median Household Income": "33,679",
-    "County FIPS Code": "2807",
+    "County FIPS Code": "28007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Attala"
@@ -15384,7 +15384,7 @@
     "TOTAL VOTES CAST": "479386",
     "State Postal": "MT",
     "Median Household Income": "45,030",
-    "County FIPS Code": "3000",
+    "County FIPS Code": "30000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Montana"
@@ -15399,7 +15399,7 @@
     "TOTAL VOTES CAST": "4749",
     "State Postal": "MT",
     "Median Household Income": "38,381",
-    "County FIPS Code": "3001",
+    "County FIPS Code": "30001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Beaverhead"
@@ -15414,7 +15414,7 @@
     "TOTAL VOTES CAST": "4561",
     "State Postal": "MT",
     "Median Household Income": "36,322",
-    "County FIPS Code": "3003",
+    "County FIPS Code": "30003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Big Horn"
@@ -15429,7 +15429,7 @@
     "TOTAL VOTES CAST": "3005",
     "State Postal": "MT",
     "Median Household Income": "45,833",
-    "County FIPS Code": "3007",
+    "County FIPS Code": "30007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Broadwater"
@@ -15444,7 +15444,7 @@
     "TOTAL VOTES CAST": "5806",
     "State Postal": "MT",
     "Median Household Income": "43,641",
-    "County FIPS Code": "3009",
+    "County FIPS Code": "30009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Carbon"
@@ -15939,7 +15939,7 @@
     "TOTAL VOTES CAST": "4499039",
     "State Postal": "NC",
     "Median Household Income": "45,195",
-    "County FIPS Code": "3700",
+    "County FIPS Code": "37000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "North Carolina"
@@ -15954,7 +15954,7 @@
     "TOTAL VOTES CAST": "66638",
     "State Postal": "NC",
     "Median Household Income": "41,394",
-    "County FIPS Code": "3701",
+    "County FIPS Code": "37001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Alamance"
@@ -15969,7 +15969,7 @@
     "TOTAL VOTES CAST": "5025",
     "State Postal": "NC",
     "Median Household Income": "34,046",
-    "County FIPS Code": "3705",
+    "County FIPS Code": "37005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Alleghany"
@@ -15984,7 +15984,7 @@
     "TOTAL VOTES CAST": "12486",
     "State Postal": "NC",
     "Median Household Income": "34,080",
-    "County FIPS Code": "3709",
+    "County FIPS Code": "37009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Ashe"
@@ -16794,7 +16794,7 @@
     "TOTAL VOTES CAST": "319825",
     "State Postal": "ND",
     "Median Household Income": "54,579",
-    "County FIPS Code": "3800",
+    "County FIPS Code": "38000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "North Dakota"
@@ -16809,7 +16809,7 @@
     "TOTAL VOTES CAST": "5471",
     "State Postal": "ND",
     "Median Household Income": "50,820",
-    "County FIPS Code": "3803",
+    "County FIPS Code": "38003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Barnes"
@@ -16824,7 +16824,7 @@
     "TOTAL VOTES CAST": "2148",
     "State Postal": "ND",
     "Median Household Income": "36,435",
-    "County FIPS Code": "3805",
+    "County FIPS Code": "38005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Benson"
@@ -16839,7 +16839,7 @@
     "TOTAL VOTES CAST": "577",
     "State Postal": "ND",
     "Median Household Income": "65,346",
-    "County FIPS Code": "3807",
+    "County FIPS Code": "38007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Billings"
@@ -16854,7 +16854,7 @@
     "TOTAL VOTES CAST": "3484",
     "State Postal": "ND",
     "Median Household Income": "50,756",
-    "County FIPS Code": "3809",
+    "County FIPS Code": "38009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Bottineau"
@@ -17289,7 +17289,7 @@
     "TOTAL VOTES CAST": "765083",
     "State Postal": "NE",
     "Median Household Income": "50,766",
-    "County FIPS Code": "3100",
+    "County FIPS Code": "31000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Nebraska"
@@ -17304,7 +17304,7 @@
     "TOTAL VOTES CAST": "3209",
     "State Postal": "NE",
     "Median Household Income": "45,135",
-    "County FIPS Code": "3103",
+    "County FIPS Code": "31003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Antelope"
@@ -17319,7 +17319,7 @@
     "TOTAL VOTES CAST": "261",
     "State Postal": "NE",
     "Median Household Income": "37,847",
-    "County FIPS Code": "3105",
+    "County FIPS Code": "31005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Arthur"
@@ -17334,7 +17334,7 @@
     "TOTAL VOTES CAST": "402",
     "State Postal": "NE",
     "Median Household Income": "46,509",
-    "County FIPS Code": "3107",
+    "County FIPS Code": "31007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Banner"
@@ -17874,7 +17874,7 @@
     "TOTAL VOTES CAST": "705874",
     "State Postal": "NH",
     "Median Household Income": "63,157",
-    "County FIPS Code": "3300",
+    "County FIPS Code": "33000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "New Hampshire"
@@ -17889,7 +17889,7 @@
     "TOTAL VOTES CAST": "403",
     "State Postal": "NH",
     "Median Household Income": "57,951",
-    "County FIPS Code": "3301",
+    "County FIPS Code": "33001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Albany"
@@ -17904,7 +17904,7 @@
     "TOTAL VOTES CAST": "771",
     "State Postal": "NH",
     "Median Household Income": "48,306",
-    "County FIPS Code": "3303",
+    "County FIPS Code": "33003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Bennington"
@@ -18009,7 +18009,7 @@
     "TOTAL VOTES CAST": "3378826",
     "State Postal": "NJ",
     "Median Household Income": "69,705",
-    "County FIPS Code": "3400",
+    "County FIPS Code": "34000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "New Jersey"
@@ -18024,7 +18024,7 @@
     "TOTAL VOTES CAST": "102405",
     "State Postal": "NJ",
     "Median Household Income": "50,881",
-    "County FIPS Code": "3401",
+    "County FIPS Code": "34001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Atlantic"
@@ -18039,7 +18039,7 @@
     "TOTAL VOTES CAST": "352023",
     "State Postal": "NJ",
     "Median Household Income": "82,001",
-    "County FIPS Code": "3403",
+    "County FIPS Code": "34003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Bergen"
@@ -18054,7 +18054,7 @@
     "TOTAL VOTES CAST": "47243",
     "State Postal": "NJ",
     "Median Household Income": "55,175",
-    "County FIPS Code": "3409",
+    "County FIPS Code": "34009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Cape May"
@@ -18084,7 +18084,7 @@
     "TOTAL VOTES CAST": "285232",
     "State Postal": "NJ",
     "Median Household Income": "74,588",
-    "County FIPS Code": "3407",
+    "County FIPS Code": "34007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Middlesex"
@@ -18129,7 +18129,7 @@
     "TOTAL VOTES CAST": "772329",
     "State Postal": "NM",
     "Median Household Income": "42,828",
-    "County FIPS Code": "3500",
+    "County FIPS Code": "35000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "New Mexico"
@@ -18144,7 +18144,7 @@
     "TOTAL VOTES CAST": "264942",
     "State Postal": "NM",
     "Median Household Income": "46,200",
-    "County FIPS Code": "3501",
+    "County FIPS Code": "35001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Bernalillo"
@@ -18159,7 +18159,7 @@
     "TOTAL VOTES CAST": "2100",
     "State Postal": "NM",
     "Median Household Income": "30,257",
-    "County FIPS Code": "3503",
+    "County FIPS Code": "35003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Catron"
@@ -18174,7 +18174,7 @@
     "TOTAL VOTES CAST": "20498",
     "State Postal": "NM",
     "Median Household Income": "38,008",
-    "County FIPS Code": "3505",
+    "County FIPS Code": "35005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Chaves"
@@ -18189,7 +18189,7 @@
     "TOTAL VOTES CAST": "8154",
     "State Postal": "NM",
     "Median Household Income": "34,783",
-    "County FIPS Code": "3506",
+    "County FIPS Code": "35006",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Cibola"
@@ -18204,7 +18204,7 @@
     "TOTAL VOTES CAST": "13450",
     "State Postal": "NM",
     "Median Household Income": "39,472",
-    "County FIPS Code": "3509",
+    "County FIPS Code": "35009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Curry"
@@ -18504,7 +18504,7 @@
     "TOTAL VOTES CAST": "10265",
     "State Postal": "NV",
     "Median Household Income": "49,463",
-    "County FIPS Code": "3201",
+    "County FIPS Code": "32001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Churchill"
@@ -18519,7 +18519,7 @@
     "TOTAL VOTES CAST": "15984",
     "State Postal": "NV",
     "Median Household Income": "68,759",
-    "County FIPS Code": "3207",
+    "County FIPS Code": "32007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Elko"
@@ -18534,7 +18534,7 @@
     "TOTAL VOTES CAST": "435",
     "State Postal": "NV",
     "Median Household Income": "40,517",
-    "County FIPS Code": "3209",
+    "County FIPS Code": "32009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Esmeralda"
@@ -18654,7 +18654,7 @@
     "TOTAL VOTES CAST": "6188982",
     "State Postal": "NY",
     "Median Household Income": "56,357",
-    "County FIPS Code": "3600",
+    "County FIPS Code": "36000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "New York"
@@ -18669,7 +18669,7 @@
     "TOTAL VOTES CAST": "316047",
     "State Postal": "NY",
     "Median Household Income": "32,510",
-    "County FIPS Code": "3605",
+    "County FIPS Code": "36005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Bronx"
@@ -18684,7 +18684,7 @@
     "TOTAL VOTES CAST": "75244",
     "State Postal": "NY",
     "Median Household Income": "44,709",
-    "County FIPS Code": "3607",
+    "County FIPS Code": "36007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Broome"
@@ -18699,7 +18699,7 @@
     "TOTAL VOTES CAST": "27608",
     "State Postal": "NY",
     "Median Household Income": "42,822",
-    "County FIPS Code": "3609",
+    "County FIPS Code": "36009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Cattaraugus"
@@ -19074,7 +19074,7 @@
     "TOTAL VOTES CAST": "41781",
     "State Postal": "OH",
     "Median Household Income": "37,811",
-    "County FIPS Code": "3907",
+    "County FIPS Code": "39007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Ashtabula"
@@ -19539,7 +19539,7 @@
     "TOTAL VOTES CAST": "1332019",
     "State Postal": "OK",
     "Median Household Income": "44,336",
-    "County FIPS Code": "4000",
+    "County FIPS Code": "40000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Oklahoma"
@@ -19554,7 +19554,7 @@
     "TOTAL VOTES CAST": "1817",
     "State Postal": "OK",
     "Median Household Income": "43,892",
-    "County FIPS Code": "4003",
+    "County FIPS Code": "40003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Alfalfa"
@@ -19569,7 +19569,7 @@
     "TOTAL VOTES CAST": "4775",
     "State Postal": "OK",
     "Median Household Income": "36,614",
-    "County FIPS Code": "4005",
+    "County FIPS Code": "40005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Atoka"
@@ -19584,7 +19584,7 @@
     "TOTAL VOTES CAST": "2300",
     "State Postal": "OK",
     "Median Household Income": "52,134",
-    "County FIPS Code": "4007",
+    "County FIPS Code": "40007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Beaver"
@@ -19599,7 +19599,7 @@
     "TOTAL VOTES CAST": "6909",
     "State Postal": "OK",
     "Median Household Income": "50,342",
-    "County FIPS Code": "4009",
+    "County FIPS Code": "40009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Beckham"
@@ -20139,7 +20139,7 @@
     "TOTAL VOTES CAST": "185564",
     "State Postal": "OR",
     "Median Household Income": "64,231",
-    "County FIPS Code": "4105",
+    "County FIPS Code": "41005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Clackamas"
@@ -20154,7 +20154,7 @@
     "TOTAL VOTES CAST": "17206",
     "State Postal": "OR",
     "Median Household Income": "43,202",
-    "County FIPS Code": "4107",
+    "County FIPS Code": "41007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Clatsop"
@@ -20169,7 +20169,7 @@
     "TOTAL VOTES CAST": "27926",
     "State Postal": "OR",
     "Median Household Income": "40,162",
-    "County FIPS Code": "4107",
+    "County FIPS Code": "41007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Coos"
@@ -20394,7 +20394,7 @@
     "TOTAL VOTES CAST": "5596499",
     "State Postal": "PA",
     "Median Household Income": "51,225",
-    "County FIPS Code": "4200",
+    "County FIPS Code": "42000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Pennsylvania"
@@ -20409,7 +20409,7 @@
     "TOTAL VOTES CAST": "614671",
     "State Postal": "PA",
     "Median Household Income": "50,831",
-    "County FIPS Code": "4203",
+    "County FIPS Code": "42003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Allegheny"
@@ -20424,7 +20424,7 @@
     "TOTAL VOTES CAST": "28322",
     "State Postal": "PA",
     "Median Household Income": "41,796",
-    "County FIPS Code": "4205",
+    "County FIPS Code": "42005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Armstrong"
@@ -20784,7 +20784,7 @@
     "TOTAL VOTES CAST": "437380",
     "State Postal": "RI",
     "Median Household Income": "54,002",
-    "County FIPS Code": "4400",
+    "County FIPS Code": "44000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Rhode Island"
@@ -20799,7 +20799,7 @@
     "TOTAL VOTES CAST": "49333",
     "State Postal": "RI",
     "Median Household Income": "47,601",
-    "County FIPS Code": "4407",
+    "County FIPS Code": "44007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Providence"
@@ -20814,7 +20814,7 @@
     "TOTAL VOTES CAST": "1921363",
     "State Postal": "SC",
     "Median Household Income": "43,290",
-    "County FIPS Code": "4500",
+    "County FIPS Code": "45000",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "South Carolina"
@@ -20829,7 +20829,7 @@
     "TOTAL VOTES CAST": "10577",
     "State Postal": "SC",
     "Median Household Income": "35,456",
-    "County FIPS Code": "4501",
+    "County FIPS Code": "45001",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Abbeville"
@@ -20844,7 +20844,7 @@
     "TOTAL VOTES CAST": "66049",
     "State Postal": "SC",
     "Median Household Income": "45,699",
-    "County FIPS Code": "4503",
+    "County FIPS Code": "45003",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Aiken"
@@ -20859,7 +20859,7 @@
     "TOTAL VOTES CAST": "4257",
     "State Postal": "SC",
     "Median Household Income": "25,633",
-    "County FIPS Code": "4505",
+    "County FIPS Code": "45005",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Allendale"
@@ -20874,7 +20874,7 @@
     "TOTAL VOTES CAST": "6854",
     "State Postal": "SC",
     "Median Household Income": "30,170",
-    "County FIPS Code": "4509",
+    "County FIPS Code": "45009",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Bamberg"
@@ -21129,7 +21129,7 @@
     "TOTAL VOTES CAST": "363695",
     "State Postal": "SD",
     "Median Household Income": "48,439",
-    "County FIPS Code": "4600",
+    "County FIPS Code": "46000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "South Dakota"
@@ -21144,7 +21144,7 @@
     "TOTAL VOTES CAST": "7263",
     "State Postal": "SD",
     "Median Household Income": "46,072",
-    "County FIPS Code": "4605",
+    "County FIPS Code": "46005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Beadle"
@@ -21159,7 +21159,7 @@
     "TOTAL VOTES CAST": "1203",
     "State Postal": "SD",
     "Median Household Income": "33,784",
-    "County FIPS Code": "4607",
+    "County FIPS Code": "46007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Bennett"
@@ -21174,7 +21174,7 @@
     "TOTAL VOTES CAST": "3074",
     "State Postal": "SD",
     "Median Household Income": "41,217",
-    "County FIPS Code": "4609",
+    "County FIPS Code": "46009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Bon Homme"
@@ -21624,7 +21624,7 @@
     "TOTAL VOTES CAST": "2442804",
     "State Postal": "TN",
     "Median Household Income": "42,743",
-    "County FIPS Code": "4700",
+    "County FIPS Code": "47000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Tennessee"
@@ -21639,7 +21639,7 @@
     "TOTAL VOTES CAST": "4359",
     "State Postal": "TN",
     "Median Household Income": "32,591",
-    "County FIPS Code": "4707",
+    "County FIPS Code": "47007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Bledsoe"
@@ -22014,7 +22014,7 @@
     "TOTAL VOTES CAST": "4476",
     "State Postal": "TX",
     "Median Household Income": "57,690",
-    "County FIPS Code": "4803",
+    "County FIPS Code": "48003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Andrews"
@@ -22029,7 +22029,7 @@
     "TOTAL VOTES CAST": "28403",
     "State Postal": "TX",
     "Median Household Income": "39,747",
-    "County FIPS Code": "4805",
+    "County FIPS Code": "48005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Angelina"
@@ -22044,7 +22044,7 @@
     "TOTAL VOTES CAST": "9646",
     "State Postal": "TX",
     "Median Household Income": "40,883",
-    "County FIPS Code": "4807",
+    "County FIPS Code": "48007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Aransas"
@@ -22059,7 +22059,7 @@
     "TOTAL VOTES CAST": "4163",
     "State Postal": "TX",
     "Median Household Income": "55,459",
-    "County FIPS Code": "4809",
+    "County FIPS Code": "48009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Archer"
@@ -24294,7 +24294,7 @@
     "TOTAL VOTES CAST": "923301",
     "State Postal": "UT",
     "Median Household Income": "57,067",
-    "County FIPS Code": "4900",
+    "County FIPS Code": "49000",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Utah"
@@ -24309,7 +24309,7 @@
     "TOTAL VOTES CAST": "18092",
     "State Postal": "UT",
     "Median Household Income": "53,830",
-    "County FIPS Code": "4903",
+    "County FIPS Code": "49003",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Box Elder"
@@ -24324,7 +24324,7 @@
     "TOTAL VOTES CAST": "37099",
     "State Postal": "UT",
     "Median Household Income": "47,609",
-    "County FIPS Code": "4905",
+    "County FIPS Code": "49005",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Cache"
@@ -24339,7 +24339,7 @@
     "TOTAL VOTES CAST": "509",
     "State Postal": "UT",
     "Median Household Income": "50,911",
-    "County FIPS Code": "4909",
+    "County FIPS Code": "49009",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Daggett"
@@ -24534,7 +24534,7 @@
     "TOTAL VOTES CAST": "3747858",
     "State Postal": "VA",
     "Median Household Income": "61,782",
-    "County FIPS Code": "5100",
+    "County FIPS Code": "51000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Virginia"
@@ -24549,7 +24549,7 @@
     "TOTAL VOTES CAST": "16020",
     "State Postal": "VA",
     "Median Household Income": "36,957",
-    "County FIPS Code": "5101",
+    "County FIPS Code": "51001",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Accomack"
@@ -24564,7 +24564,7 @@
     "TOTAL VOTES CAST": "53732",
     "State Postal": "VA",
     "Median Household Income": "70,813",
-    "County FIPS Code": "5103",
+    "County FIPS Code": "51003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Albemarle"
@@ -24579,7 +24579,7 @@
     "TOTAL VOTES CAST": "6885",
     "State Postal": "VA",
     "Median Household Income": "49,714",
-    "County FIPS Code": "5107",
+    "County FIPS Code": "51007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Amelia"
@@ -25209,7 +25209,7 @@
     "TOTAL VOTES CAST": "297274",
     "State Postal": "VT",
     "Median Household Income": "52,700",
-    "County FIPS Code": "5000",
+    "County FIPS Code": "50000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Vermont"
@@ -25224,7 +25224,7 @@
     "TOTAL VOTES CAST": "567",
     "State Postal": "VT",
     "Median Household Income": "46,660",
-    "County FIPS Code": "5003",
+    "County FIPS Code": "50003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Berkshire"
@@ -25239,7 +25239,7 @@
     "TOTAL VOTES CAST": "711",
     "State Postal": "VT",
     "Median Household Income": "62,374",
-    "County FIPS Code": "5007",
+    "County FIPS Code": "50007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Chittenden"
@@ -25254,7 +25254,7 @@
     "TOTAL VOTES CAST": "9883",
     "State Postal": "WA",
     "Median Household Income": "42,364",
-    "County FIPS Code": "5303",
+    "County FIPS Code": "53003",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Asotin"
@@ -25269,7 +25269,7 @@
     "TOTAL VOTES CAST": "30952",
     "State Postal": "WA",
     "Median Household Income": "45,730",
-    "County FIPS Code": "5307",
+    "County FIPS Code": "53007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Chelan"
@@ -25284,7 +25284,7 @@
     "TOTAL VOTES CAST": "35242",
     "State Postal": "WA",
     "Median Household Income": "43,482",
-    "County FIPS Code": "5309",
+    "County FIPS Code": "53009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Clallam"
@@ -25569,7 +25569,7 @@
     "TOTAL VOTES CAST": "3056613",
     "State Postal": "WI",
     "Median Household Income": "51,063",
-    "County FIPS Code": "5500",
+    "County FIPS Code": "55000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Wisconsin"
@@ -25584,7 +25584,7 @@
     "TOTAL VOTES CAST": "22583",
     "State Postal": "WI",
     "Median Household Income": "42,676",
-    "County FIPS Code": "5505",
+    "County FIPS Code": "55005",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Barron"
@@ -25599,7 +25599,7 @@
     "TOTAL VOTES CAST": "9759",
     "State Postal": "WI",
     "Median Household Income": "44,487",
-    "County FIPS Code": "5507",
+    "County FIPS Code": "55007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Bayfield"
@@ -26094,7 +26094,7 @@
     "TOTAL VOTES CAST": "661643",
     "State Postal": "WV",
     "Median Household Income": "40,188",
-    "County FIPS Code": "5400",
+    "County FIPS Code": "54000",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "West Virginia"
@@ -26109,7 +26109,7 @@
     "TOTAL VOTES CAST": "4756",
     "State Postal": "WV",
     "Median Household Income": "33,280",
-    "County FIPS Code": "5407",
+    "County FIPS Code": "54007",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Braxton"
@@ -26124,7 +26124,7 @@
     "TOTAL VOTES CAST": "9224",
     "State Postal": "WV",
     "Median Household Income": "40,044",
-    "County FIPS Code": "5409",
+    "County FIPS Code": "54009",
     "Last name1": "Obama",
     "Last name2": "Romney",
     "County Name": "Brooke"
@@ -26364,7 +26364,7 @@
     "TOTAL VOTES CAST": "6287",
     "State Postal": "WY",
     "Median Household Income": "63,808",
-    "County FIPS Code": "5609",
+    "County FIPS Code": "56009",
     "Last name1": "Romney",
     "Last name2": "Obama",
     "County Name": "Converse"

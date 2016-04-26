@@ -228,10 +228,10 @@ function fixFIPS(json) {
 	for(var i = 0; i < json.length; i++) {
 		var obj=json[i];
 		if(parseInt(obj["County FIPS Code"]) < 10){
-			obj["County FIPS Code"] = 00 + obj["County FIPS Code"];
+			obj["County FIPS Code"] = "00" + obj["County FIPS Code"];
 		}
 		else if (parseInt(obj["County FIPS Code"]) < 100){
-			obj["County FIPS Code"] = 0 + obj["County FIPS Code"];
+			obj["County FIPS Code"] = "0" + obj["County FIPS Code"];
 		}
 	}
 	//Add on the first two digits of the FIPS code, which are for the state
