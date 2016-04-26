@@ -13,15 +13,17 @@
 <!-- Load the Master JSON file  & Restructure it -->
     <script>
     var globalData;
+    var globalArray; //~57000 possible codes, use to index vote data by county id
     d3.json("fixedCodes.json", function(error, data){
         if(error){
             console.log(error);
         }
         globalJSON = data;
+        globalArray = makeJSONArray(globalJSON);
     });
     
     var globalJSON;
-    
+
     </script>
 </head>
 
@@ -170,6 +172,18 @@ function zoomed() {
   g.selectAll("path").attr("d", path);
 }
 
+
+//Not correct yet, issues because of string/int types and concatenation instead of adding
+function makeJSONArray(json) {
+	var array = new Array(57000);
+	for(var i = 0; i < json.length; i++){
+		var obj = json[i];
+		var idx = parseInt(obj["County FIPS Code"]);
+		array[idx] = obj;
+	}
+	return array;
+}
+//57000 max 
 
 </script>
 </body>
