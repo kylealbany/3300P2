@@ -13,11 +13,11 @@
 <!-- Load the Master JSON file  & Restructure it -->
     <script>
     var globalData;
-    d3.json("summarypretty.json", function(error, data){
+    d3.json("summary2.json", function(error, data){
         if(error){
             console.log(error);
         }
-        globalJSON = data;
+        globalJSON = fixFIPS(data);
     });
     
     var globalJSON;
@@ -77,6 +77,7 @@ var zoom = d3.behavior.zoom()
 var g = svg.append("g")
 	.call(zoom);
 
+
 d3.json("us.json", function(error, us) {
 
 
@@ -108,6 +109,10 @@ var currentCounty;
 function stateClicked(d) {
 	var x, y;
 	var zoom = 3;
+
+
+	console.log(globalJSON);
+
 
 	if(currentState != null){
 		currentState.attr("display", "initial");
@@ -170,6 +175,168 @@ function zoomed() {
 }
 
 
+//Not correct yet, issues because of string/int types and concatenation instead of adding
+function fixFIPS(json) {
+	for(var i = 0; i < json.length; i++) {
+		var obj=json[i];
+		if (obj["State Postal"] == "AK"){
+			obj["County FIPS Code"] += 02000;
+		}
+		else if (obj["State Postal"] == "AL"){
+			obj["County FIPS Code"] += 01000;
+		}
+		else if (obj["State Postal"] == "AR"){
+			obj["County FIPS Code"] += 05000;
+		}
+		else if (obj["State Postal"] == "AZ"){
+			obj["County FIPS Code"] += 04000;
+		}
+		else if (obj["State Postal"] == "CA"){
+			obj["County FIPS Code"] += 06000;
+		}
+		else if (obj["State Postal"] == "CO"){
+			obj["County FIPS Code"] += 08000;
+		}
+		else if (obj["State Postal"] == "CT"){
+			obj["County FIPS Code"] += 09000;
+		}
+		else if (obj["State Postal"] == "DC"){
+			obj["County FIPS Code"] += 11000;
+		}
+		else if (obj["State Postal"] == "DE"){
+			obj["County FIPS Code"] += 10000;
+		}
+		else if (obj["State Postal"] == "FL"){
+			obj["County FIPS Code"] += 12000;
+		}
+		else if (obj["State Postal"] == "GA"){
+			obj["County FIPS Code"] += 13000;
+		}
+		else if (obj["State Postal"] == "HI"){
+			obj["County FIPS Code"] += 15000;
+		}
+		else if (obj["State Postal"] == "IA"){
+			obj["County FIPS Code"] += 19000;
+		}
+		else if (obj["State Postal"] == "ID"){
+			obj["County FIPS Code"] += 16000;
+		}
+		else if (obj["State Postal"] == "IL"){
+			obj["County FIPS Code"] += 17000;
+		}
+		else if (obj["State Postal"] == "IN"){
+			obj["County FIPS Code"] += 18000;
+		}
+		else if (obj["State Postal"] == "KS"){
+			obj["County FIPS Code"] += 20000;
+		}
+		else if (obj["State Postal"] == "KY"){
+			obj["County FIPS Code"] += 21000;
+		}
+		else if (obj["State Postal"] == "LA"){
+			obj["County FIPS Code"] += 22000;
+		}
+		else if (obj["State Postal"] == "MA"){
+			obj["County FIPS Code"] += 25000;
+		}
+		else if (obj["State Postal"] == "MD"){
+			obj["County FIPS Code"] += 24000;
+		}
+		else if (obj["State Postal"] == "ME"){
+			obj["County FIPS Code"] += 23000;
+		}
+		else if (obj["State Postal"] == "MI"){
+			obj["County FIPS Code"] += 26000;
+		}
+		else if (obj["State Postal"] == "MN"){
+			obj["County FIPS Code"] += 27000;
+		}
+		else if (obj["State Postal"] == "MO"){
+			obj["County FIPS Code"] += 29000;
+		}
+		else if (obj["State Postal"] == "MS"){
+			obj["County FIPS Code"] += 28000;
+		}
+		else if (obj["State Postal"] == "MT"){
+			obj["County FIPS Code"] += 30000;
+		}
+		else if (obj["State Postal"] == "NC"){
+			obj["County FIPS Code"] += 37000;
+		}
+		else if (obj["State Postal"] == "ND"){
+			obj["County FIPS Code"] += 38000;
+		}
+		else if (obj["State Postal"] == "NE"){
+			obj["County FIPS Code"] += 31000;
+		}
+		else if (obj["State Postal"] == "NH"){
+			obj["County FIPS Code"] += 33000;
+		}
+		else if (obj["State Postal"] == "NJ"){
+			obj["County FIPS Code"] = 34000;
+		}
+		else if (obj["State Postal"] == "NM"){
+			obj["County FIPS Code"] += 35000;
+		}
+		else if (obj["State Postal"] == "NV"){
+			obj["County FIPS Code"] += 32000;
+		}
+		else if (obj["State Postal"] == "NY"){
+			obj["County FIPS Code"] += 36000;
+		}
+		else if (obj["State Postal"] == "OH"){
+			obj["County FIPS Code"] += 39000;
+		}
+		else if (obj["State Postal"] == "OK"){
+			obj["County FIPS Code"] += 40000;
+		}
+		else if (obj["State Postal"] == "OR"){
+			obj["County FIPS Code"] += 41000;
+		}
+		else if (obj["State Postal"] == "PA"){
+			obj["County FIPS Code"] += 42000;
+		}
+		else if (obj["State Postal"] == "RI"){
+			obj["County FIPS Code"] += 44000;
+		}
+		else if (obj["State Postal"] == "SC"){
+			obj["County FIPS Code"] += 45000;
+		}
+		else if (obj["State Postal"] == "SD"){
+			obj["County FIPS Code"] += 46000;
+		}
+		else if (obj["State Postal"] == "TN"){
+			obj["County FIPS Code"] += 47000;
+		}
+		else if (obj["State Postal"] == "TX"){
+			obj["County FIPS Code"] += 48000;
+		}
+		else if (obj["State Postal"] == "UT"){
+			obj["County FIPS Code"] += 49000;
+		}
+		else if (obj["State Postal"] == "VA"){
+			obj["County FIPS Code"] += 51000;
+		}
+		else if (obj["State Postal"] == "VT"){
+			obj["County FIPS Code"] += 50000;
+		}
+		else if (obj["State Postal"] == "WA"){
+			obj["County FIPS Code"] += 53000;
+		}
+		else if (obj["State Postal"] == "WI"){
+			obj["County FIPS Code"] += 55000;
+		}
+		else if (obj["State Postal"] == "WV"){
+			obj["County FIPS Code"] += 54000;
+		}
+		else if (obj["State Postal"] == "WY"){
+			obj["County FIPS Code"] += 56000;
+		}
+		else {
+			console.log(obj);
+		}
+	}
+}
 
 </script>
 </body>
