@@ -150,13 +150,10 @@ d3.json("us.json", function(error, us) {
         	.style("fill", function(d) {
         		// Sum number of votes for the state and output winning color
         		var id = d.id;
-        		var startRange = parseInt(d.id + "000");
-        		var endRange = startRange + 1000;
-
-        		///
-        		var obj = globalArray[startRange];
+        		var stateId = parseInt(d.id + "000");
+  
+        		var obj = globalArray[stateId];
         		if(obj == null){
-        			console.log(d.id);
         			return "888888";
         		}
         		else if(obj["Party1"] == "Dem"){
@@ -170,33 +167,9 @@ d3.json("us.json", function(error, us) {
         			var totalVotes = parseInt(obj["TOTAL VOTES CAST"]);
         		}
         		else{
-        			console.log("error");
-        			console.log(obj);
+        			return "888888";
         		}
-        		///
-        		// var demVotes = 0;
-        		// var gopVotes = 0;
-        		// var totalVotes = 0;
-        		// for(var i = startRange; i < endRange; i++){
-        		// 	var obj = globalArray[i];
-         	// 		if(obj == null){
-        		// 		continue;
-        		// 	}
-        		// 	else if(obj["Party1"] == "Dem"){
-        		// 		demVotes += parseInt(obj["Votes1"]);
-        		// 		gopVotes += parseInt(obj["Votes2"]);
-        		// 	}
-        		// 	else if(obj["Party1"] == "GOP"){
-        		// 		gopVotes += parseInt(obj["Votes1"]);
-        		// 		demVotes += parseInt(obj["Votes2"]);
-        		// 	}
-        		// 	else{
-        		// 		console.log("Party didn't match");
-        		// 		console.log(obj);
-        		// 		console.log(d.id);
-        		// 	} 
-        		// 	totalVotes += (parseInt(obj["TOTAL VOTES CAST"]));     			
-        		// }
+
         		if (demVotes > gopVotes){
         			var scaleInput = (demVotes)/totalVotes;
         			return blueScale(scaleInput);
@@ -243,6 +216,56 @@ function stateClicked(d) {
     // Code to change the information in the infobox
     var info_box = d3.select("#dynamic-data");
     
+    var id = d.id + "000";
+
+    var obj = globalArray[id];
+    // Write county info to the infobox
+    var infobox = d3.select("#dynamic-data");
+    infobox.html('');
+    //BS Variables that need set later on
+    var countyvar = obj["County Name"];
+    var income = obj["Median Household Income"];
+    
+    var totalVotes = parseInt(obj["TOTAL VOTES CAST"]);
+    if(obj["Party1"] == "Dem"){
+    	var demVotes = parseInt(obj["Votes1"]);
+    	var gopVotes = parseInt(obj["Votes2"]);
+    }
+    else if(obj["Party1"] == "GOP"){
+    	var gopVotes = parseInt(obj["Votes1"]);
+    	var demVotes = parseInt(obj["Votes2"]);
+    }
+    else{
+    	console.log("error party names");
+    }
+
+    var Obamavar = ((100 * demVotes)/totalVotes).toFixed(2);
+    var Romneyvar = ((100 * gopVotes)/totalVotes).toFixed(2);
+    var Othervar = (100 - Obamavar - Romneyvar).toFixed(2);
+
+    // Infobox writing
+    infobox.append('p')
+        .text('State: ' + countyvar);
+    infobox.append('p')
+        .text('Obama: ' + Obamavar + "%")
+        .append('svg')
+        .append('rect')
+        .attr("class",'dem_rect')
+        .attr('width', 2*Obamavar);
+    infobox.append('p')
+        .text('Romney: ' + Romneyvar + "%")
+        .append('svg')
+        .append('rect')
+        .attr("class",'rep_rect')
+        .attr('width', 2*Romneyvar);
+    infobox.append('p')
+        .text('Other: ' + Othervar + "%")
+        .append('svg')
+        .append('rect')
+        .attr("class",'other_rect')
+        .attr('width', 2*Othervar);
+    infobox.append('p')
+        .text("Median Household Income: $" + income);
 
 }
 
@@ -338,14 +361,12 @@ function zoomed() {
 
 //Not correct yet, issues because of string/int types and concatenation instead of adding
 function makeJSONArray(json) {
-	console.log("starting to make array");
 	var array = new Array();
 	for(var i = 0; i < json.length; i++){
 		var obj = json[i];
 		var idx = parseInt(obj["FIPS Codes"]);
 		array[idx] = obj;
 	}
-	console.log("Made JSON Array");
 	return array;
 }
 
