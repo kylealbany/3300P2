@@ -103,9 +103,6 @@ d3.json("us.json", function(error, us) {
         		var votes1 = parseInt(obj["Votes1"]);
         		var votes2 = parseInt(obj["Votes2"]);
         		var totalVotes = parseInt(obj["TOTAL VOTES CAST"]);
-        		console.log(votes1);
-        		console.log(votes2);
-        		console.log(totalVotes);
         		if(party1 == "Dem"){
         			//Dem win
         			if(votes1>votes2){
