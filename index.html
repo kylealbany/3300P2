@@ -80,6 +80,13 @@ var zoom = d3.behavior.zoom()
 var g = svg.append("g")
 	.call(zoom);
 
+var blueScale = d3.scale.linear()
+            .range(['white','blue'])
+            .domain([.3,.9]);
+
+var redScale = d3.scale.linear()
+            .range(['white','red'])
+            .domain([.3,.9]);
 
 d3.json("us.json", function(error, us) {
 
@@ -95,28 +102,33 @@ d3.json("us.json", function(error, us) {
         		if(obj == null){
         			return "cccccc";
         		}
-        		if(obj["Party1"] == "Dem"){
+        		var party1 = obj["Party1"];
+        		var party2 = obj["Party2"];
+        		var votes1 = parseInt(obj["Votes1"]);
+        		var votes2 = parseInt(obj["Votes2"]);
+        		var totalVotes = parseInt(obj["TOTAL VOTES CAST"]);
+        		if(party1 == "Dem"){
         			//Dem win
-        			if(parseInt(obj["Votes1"])>parseInt(obj["Votes2"])){
-        				return "0000ff";
+        			if(votes1>votes2){
+        				return blueScale((1.0*votes1)/totalVotes);
         			}
         			//GOP win
-        			else if(parseInt(obj["Votes2"])>parseInt(obj["Votes1"])){
-        				return "ff0000";
+        			else if(votes2>votes1){
+        				return redScale((1.0*votes2)/totalVotes);
         			}
         			//Other win
         			else{
 						return "006600";
         			}
         		}
-        		else if(obj["Party1"] == "GOP"){
+        		else if(party1 == "GOP"){
         			//GOP win
-        			if(parseInt(obj["Votes1"])>parseInt(obj["Votes2"])){
-        				return "ff0000";
+        			if(votes1>votes2){
+        				return redScale((1.0*votes1)/totalVotes);
         			}
         			//Dem win
-        			else if(parseInt(obj["Votes2"])>parseInt(obj["Votes1"])){
-        				return "0000ff";
+        			else if(votes2>votes1){
+        				return blueScale((1.0*votes2)/totalVotes);
         			}
         			//Other win
         			else{
@@ -144,6 +156,7 @@ d3.json("us.json", function(error, us) {
         		var endRange = startRange + 1000;
         		var demVotes = 0;
         		var gopVotes = 0;
+        		var totalVotes = 0;
         		for(var i = startRange; i < endRange; i++){
         			var obj = globalArray[i];
          			if(obj == null){
@@ -161,19 +174,21 @@ d3.json("us.json", function(error, us) {
         				console.log("Party didn't match");
         				console.log(obj);
         				console.log(d.id);
-        			}       			
+        			} 
+        			totalVotes += (parseInt(obj["TOTAL VOTES CAST"]));     			
         		}
-        		if (gopVotes > demVotes){
-        			return "ff0000";
+        		if (demVotes > gopVotes){
+        			var scaleInput = (1.0*demVotes)/totalVotes;
+        			return blueScale(scaleInput);
         		}
-        		else if (demVotes > gopVotes){
-        			return "0000ff";
+        		else if (gopVotes > demVotes){
+        			var scaleInput = (1.0*gopVotes)/totalVotes;
+        			return redScale(scaleInput);
         		}
         		else{
-        			console.log("demVotes vs gopVotes error");
-        			console.log(demVotes);
-        			console.log(gopVotes);
+        			return "cccccc";
         		}
+        		
         	})
         	.style("stroke", "888888")
         	.on('mousedown.log', stateClicked);
