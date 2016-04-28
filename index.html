@@ -48,6 +48,8 @@
             <p> Filtering Options </p>
                 <div id="slider"></div>
                 <div id="dynamic-data"></div>
+
+                 
         </div>
     </div>
 </div>
@@ -204,6 +206,9 @@ function stateClicked(d) {
       .duration(1000)
       .attr("transform", "translate(" + width/2 + "," + height/2 + ")scale(" + zoom + ")translate(" + -x + "," + -y + ")");
 
+    // Code to change the information in the infobox
+    var info_box = d3.select("#dynamic-data");
+    
 
 }
 
@@ -222,7 +227,37 @@ function countyClicked(d){
       
     // Write county info to the infobox
     var infobox = d3.select("#dynamic-data");
+    infobox.html('');
+    //BS Variables that need set later on
+    var countyvar = "PA";
+    var Obamavar = "55%";
+    var income = 55000;
     
+    // Infobox writing
+    infobox.append('p')
+        .text('County: ' + countyvar);
+    infobox.append('p')
+        .text('Obama: ' + Obamavar)
+        .append('svg')
+        .append('rect')
+        .attr("class",'dem_rect')
+        .attr('width',140);
+    infobox.append('p')
+        .text('Romney: ' + Obamavar)
+        .append('svg')
+        .append('rect')
+        .attr("class",'rep_rect')
+        .attr('width',140);
+    infobox.append('p')
+        .text('Other: ' + Obamavar)
+        .append('svg')
+        .append('rect')
+        .attr("class",'other_rect')
+        .attr('width',140);
+    infobox.append('p')
+        .text("Median Household Income: $" + income);
+
+
 }
 
 //Color in the county that is clicked on

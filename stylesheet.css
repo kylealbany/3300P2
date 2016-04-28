@@ -49,6 +49,37 @@ body{
     float:left;
     margin:0px 50px;
 }
+#slider{
+    height:150px;
+}
+#dynamic-data p{
+    padding-top:30px;
+    text-align:right;
+}
+#dynamic-data svg{
+    width:200px;
+    height:35px;
+    margin-left:10px;
+    border: 1px solid black;
+}
+.rep_rect{
+    x:0;
+    y:0;
+    height:35;
+    fill:red;
+}
+.dem_rect{
+    x:0;
+    y:0;
+    height:35;
+    fill:blue;
+}
+.other_rect{
+    x:0;
+    y:0;
+    height:35;
+    fill:green;
+}
 hr{
     margin-top:50px;
 }
