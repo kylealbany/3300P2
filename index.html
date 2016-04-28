@@ -36,6 +36,11 @@
         </div>
         <div id="info-box">
             <p> Filtering Options </p>
+            <button onclick="zoomOut()">Zoom out</button>
+            <button onclick="zoomIn()">Zoom in</button>
+            <button onclick="showCounties()">Show counties only</button>
+            <button onclick="showStates()">Show states only</button>
+            <button onclick="myFunction()">Filter counties</button>
                 <div id="slider"></div>
                 <div id="dynamic-data"></div>
 
@@ -49,6 +54,7 @@
 </div>
 
 <script>
+var zoomLevel = 1;
 var globalData;
 var arrayDone = false;
 var globalArray; //~57000 possible codes, use to index vote data by county id
@@ -147,6 +153,7 @@ d3.json("us.json", function(error, us) {
     	    .data(topojson.feature(us, us.objects.states).features)
     	.enter().append("path")
         	.attr("d", path)
+        	.attr("class", "states")
         	.style("fill", function(d) {
         		// Sum number of votes for the state and output winning color
         		var id = d.id;
@@ -196,7 +203,7 @@ var currentCounty;
 //Zoom in to county view of state when it is clicked
 function stateClicked(d) {
 	var x, y;
-	var zoom = 3;
+	zoomLevel = 3;
 
 	if(currentState != null){
 		currentState.attr("display", "initial");
@@ -211,7 +218,7 @@ function stateClicked(d) {
 
 	g.transition()
       .duration(1000)
-      .attr("transform", "translate(" + width/2 + "," + height/2 + ")scale(" + zoom + ")translate(" + -x + "," + -y + ")");
+      .attr("transform", "translate(" + width/2 + "," + height/2 + ")scale(" + zoomLevel + ")translate(" + -x + "," + -y + ")");
 
     // Code to change the information in the infobox
     var info_box = d3.select("#dynamic-data");
@@ -272,18 +279,10 @@ function stateClicked(d) {
 //Change function later, currently zooms out to state view and logs county id when clicked
 function countyClicked(d){
 
-
-	if(currentState != null){
-		currentState.attr("display", "initial");
-	}
-
-	g.transition()
-      .duration(1000)
-      .attr("transform", "scale(" + 1 + ")");
 	
 	if(d.id >= 2000 && d.id < 3000){
 		//Handle this better later
-		console.log("Election data on a county by county basis was unavailable for Alaska");
+		alert("Election data on a county by county basis was unavailable for Alaska");
 		return;
 	}      
 
@@ -338,24 +337,39 @@ function countyClicked(d){
 
 }
 
-//Color in the county that is clicked on
-function colorCounty(d){
-	currentCounty = d3.select(this);
-	currentCounty.style("fill", "FF0000");
-}
 
 //Currently just a copy of the functionality for countyClicked to zoom back to state level
 function zoomOut(){
 
-	if(currentState != null){
-		currentState.attr("display", "initial");
-	}
-
+	zoomLevel -= .5;
 	g.transition()
       .duration(1000)
-      .attr("transform", "scale(" + 1 + ")");
+      .attr("transform", "scale(" + zoomLevel + ")");
+	// if(currentState != null){
+	// 	currentState.attr("display", "initial");
+	// }
+
+	// g.transition()
+ //      .duration(1000)
+ //      .attr("transform", "scale(" + 1 + ")");
 }
 
+function zoomIn(){
+	zoomLevel += .5; 
+	g.transition()
+      .duration(1000)
+      .attr("transform", "scale(" + zoomLevel + ")");
+}
+
+function showStates(){
+	g.selectAll(".states")
+   		.attr("display", "initial");
+}
+
+function showCounties(){
+	g.selectAll(".states")
+   		.attr("display", "none");
+}
 
 //Not correct yet, issues because of string/int types and concatenation instead of adding
 function makeJSONArray(json) {
