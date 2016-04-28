@@ -1,5 +1,10 @@
 <html>
 <head>
+
+
+<!-- We might have to directly download these files and save them in our submission file -->
+
+
     <title>Voting Records & Region Demographics</title>
 <!-- Load the d3 library. -->
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -23,7 +28,8 @@
     <div id="paragraph">
         <p> This is an introductory paragraph that will explain a few things before we go
         into our main plot. It could potentially explain how to use the graph, and maybe 
-        even the rationale as to why we are doing this data visualization in the first place.</p>
+        even the rationale as to why we are doing this data visualization in the first place.
+        Mention that it only uses popular vote so the colors may be different from electoral vote maps. </p>
     </div>
     <div id="mapholder">
         <div id="map">
@@ -61,14 +67,8 @@ var svg = d3.select("#map").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-var zoom = d3.behavior.zoom()
-    .translate(projection.translate())
-    .scale(projection.scale())
-    .scaleExtent([2*height, 8 * height])
-    .on("zoom", zoomed);
 
-var g = svg.append("g")
-	.call(zoom);
+var g = svg.append("g");
 
 var blueScale = d3.scale.linear()
             .range(['white','blue'])
@@ -271,7 +271,6 @@ function stateClicked(d) {
 
 //Change function later, currently zooms out to state view and logs county id when clicked
 function countyClicked(d){
-	console.log(d.id);
 
 
 	if(currentState != null){
@@ -281,7 +280,12 @@ function countyClicked(d){
 	g.transition()
       .duration(1000)
       .attr("transform", "scale(" + 1 + ")");
-      
+	
+	if(d.id >= 2000 && d.id < 3000){
+		//Handle this better later
+		console.log("Election data on a county by county basis was unavailable for Alaska");
+		return;
+	}      
 
     var obj = globalArray[d.id];
     // Write county info to the infobox
@@ -350,12 +354,6 @@ function zoomOut(){
 	g.transition()
       .duration(1000)
       .attr("transform", "scale(" + 1 + ")");
-}
-
-//Used for d3 mousewheel scrolling
-function zoomed() {
-  projection.translate(d3.event.translate).scale(d3.event.scale);
-  g.selectAll("path").attr("d", path);
 }
 
 
