@@ -10,22 +10,6 @@
     <link href='stylesheet.css' rel='stylesheet' type='text/css'>
 <!-- Jquery & JS links go here -->
 
-<!-- Load the Master JSON file  & Restructure it -->
-    <script>
-    var globalData;
-
-    var globalArray; //~57000 possible codes, use to index vote data by county id
-    d3.json("fixedCodes.json", function(error, data){
-        if(error){
-            console.log(error);
-        }
-        globalJSON = data
-        globalArray = makeJSONArray(globalJSON);
-    });
-    var globalCount = 0;
-    var globalJSON;
-
-    </script>
 </head>
 
 <body>
@@ -57,6 +41,10 @@
 </div>
 
 <script>
+var globalData;
+var arrayDone = false;
+var globalArray; //~57000 possible codes, use to index vote data by county id
+
 var width = 1000;
 var height = 500;
 
@@ -88,8 +76,17 @@ var redScale = d3.scale.linear()
             .range(['white','red'])
             .domain([.3,.9]);
 
-d3.json("us.json", function(error, us) {
+d3.json("counties.json", function(error, data){
+    if(error){
+        console.log(error);
+    }
+    globalJSON = data
+    globalArray = makeJSONArray(globalJSON);
+    drawMap();
+});
 
+function drawMap(){
+d3.json("us.json", function(error, us) {
 
 	g.append("g")
 	    .selectAll("path")
@@ -98,7 +95,6 @@ d3.json("us.json", function(error, us) {
         	.attr("d", path)
         	.style("fill", function(d) {
         		var obj = globalArray[d.id];
-        		globalCount += 1;
         		if(obj == null){
         			return "cccccc";
         		}
@@ -107,6 +103,9 @@ d3.json("us.json", function(error, us) {
         		var votes1 = parseInt(obj["Votes1"]);
         		var votes2 = parseInt(obj["Votes2"]);
         		var totalVotes = parseInt(obj["TOTAL VOTES CAST"]);
+        		console.log(votes1);
+        		console.log(votes2);
+        		console.log(totalVotes);
         		if(party1 == "Dem"){
         			//Dem win
         			if(votes1>votes2){
@@ -195,6 +194,7 @@ d3.json("us.json", function(error, us) {
 
 
 });
+}
 
 var currentState;
 var currentCounty;
@@ -267,14 +267,17 @@ function zoomed() {
 
 //Not correct yet, issues because of string/int types and concatenation instead of adding
 function makeJSONArray(json) {
-	var array = new Array(57000);
+	console.log("starting to make array");
+	var array = new Array();
 	for(var i = 0; i < json.length; i++){
 		var obj = json[i];
 		var idx = parseInt(obj["County FIPS Code"]);
 		array[idx] = obj;
 	}
+	console.log("Made JSON Array");
 	return array;
 }
+
 
 //Takes county code/state postals from json and formats them to match us.json
 function fixFIPS(json) {
