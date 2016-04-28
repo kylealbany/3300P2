@@ -21,7 +21,7 @@
         globalJSON = data
         globalArray = makeJSONArray(globalJSON);
     });
-    
+    var globalCount = 0;
     var globalJSON;
 
     </script>
@@ -90,6 +90,7 @@ d3.json("us.json", function(error, us) {
         	.attr("d", path)
         	.style("fill", function(d) {
         		var obj = globalArray[d.id];
+        		globalCount += 1;
         		if(obj == null){
         			return "cccccc";
         		}
@@ -130,14 +131,51 @@ d3.json("us.json", function(error, us) {
         	.style("stroke", "888888")
         	.on('mousedown.log', countyClicked);
 
-	// g.append("g")
-	//     .selectAll("path")
- //    	    .data(topojson.feature(us, us.objects.states).features)
- //    	.enter().append("path")
- //        	.attr("d", path)
- //        	.style("fill", "cccccc")
- //        	.style("stroke", "888888")
- //        	.on('mousedown.log', stateClicked);
+	g.append("g")
+	    .selectAll("path")
+    	    .data(topojson.feature(us, us.objects.states).features)
+    	.enter().append("path")
+        	.attr("d", path)
+        	.style("fill", function(d) {
+        		// Sum number of votes for the state and output winning color
+        		var id = d.id;
+        		var startRange = parseInt(d.id + "000");
+        		var endRange = startRange + 1000;
+        		var demVotes = 0;
+        		var gopVotes = 0;
+        		for(var i = startRange; i < endRange; i++){
+        			var obj = globalArray[i];
+         			if(obj == null){
+        				continue;
+        			}
+        			else if(obj["Party1"] == "Dem"){
+        				demVotes += parseInt(obj["Votes1"]);
+        				gopVotes += parseInt(obj["Votes2"]);
+        			}
+        			else if(obj["Party1"] == "GOP"){
+        				gopVotes += parseInt(obj["Votes1"]);
+        				demVotes += parseInt(obj["Votes2"]);
+        			}
+        			else{
+        				console.log("Party didn't match");
+        				console.log(obj);
+        				console.log(d.id);
+        			}       			
+        		}
+        		if (gopVotes > demVotes){
+        			return "ff0000";
+        		}
+        		else if (demVotes > gopVotes){
+        			return "0000ff";
+        		}
+        		else{
+        			console.log("demVotes vs gopVotes error");
+        			console.log(demVotes);
+        			console.log(gopVotes);
+        		}
+        	})
+        	.style("stroke", "888888")
+        	.on('mousedown.log', stateClicked);
 
 
 });
