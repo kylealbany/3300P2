@@ -39,6 +39,7 @@
             <h3> Filtering Options </h3>
             <button onclick="showCounties()">Show counties only</button>
             <button onclick="showStates()">Show states only</button>
+            <button onclick="zoomOut()">Reset Zoom</button>
             <input type="text" name="lowIncome" id="lowIncome" placeholder="Min Income">
             <input type="text" name="highIncome" id="highIncome" placeholder="Max Income">
             <button onclick="filterCounties()">Filter counties</button>
@@ -192,8 +193,6 @@ function stateClicked(d) {
     var centroid = path.centroid(d);
     x = centroid[0];
     y = centroid[1];
-    mouseX = x;
-    mouseY = y;
 	g.transition()
       .duration(1000)
       .attr("transform", "translate(" + width/2 + "," + height/2 + ")scale(" + zoomLevel + ")translate(" + -x + "," + -y + ")");
@@ -263,9 +262,14 @@ function countyClicked(d){
 		alert("Election data on a county by county basis was unavailable for Alaska");
 		return;
 	}      
-	var centroid = path.centroid(d);
-    mouseX = centroid[0];
-    mouseY = centroid[1];
+    var centroid = path.centroid(d);
+    x = centroid[0];
+    y = centroid[1];
+    if(zoomLevel<3){
+		g.transition()
+      		.duration(1000)
+      		.attr("transform", "translate(" + width/2 + "," + height/2 + ")scale(3)translate(" + -x + "," + -y + ")");
+    }
     var obj = globalArray[d.id];
     // Write county info to the infobox
     var infobox = d3.select("#dynamic-data");
@@ -414,12 +418,10 @@ function zoom(delta){
 }
 
 function zoomOut(){
-	if (zoomLevel > 1){
-		zoomLevel -= 2;
-		g.transition()
+	zoomLevel = 1;
+	g.transition()
       	.duration(1000)
       	.attr("transform", "scale(" + zoomLevel + ")");
-    }
 }
 
 function zoomIn(){
