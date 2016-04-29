@@ -80,8 +80,11 @@ var path = d3.geo.path()
 
 var svg = d3.select("#map").append("svg")
     .attr("width", width)
-    .attr("height", height);
+    .attr("height", height)
+    .on("mousemove", mousemove);
 
+var mouseX;
+var mouseY;
 
 var g = svg.append("g");
 
@@ -186,7 +189,8 @@ function stateClicked(d) {
     var centroid = path.centroid(d);
     x = centroid[0];
     y = centroid[1];
-
+    mouseX = x;
+    mouseY = y;
 	g.transition()
       .duration(1000)
       .attr("transform", "translate(" + width/2 + "," + height/2 + ")scale(" + zoomLevel + ")translate(" + -x + "," + -y + ")");
@@ -256,7 +260,9 @@ function countyClicked(d){
 		alert("Election data on a county by county basis was unavailable for Alaska");
 		return;
 	}      
-
+	var centroid = path.centroid(d);
+    mouseX = centroid[0];
+    mouseY = centroid[1];
     var obj = globalArray[d.id];
     // Write county info to the infobox
     var infobox = d3.select("#dynamic-data");
@@ -389,6 +395,11 @@ function colorCounty(d){
 	}
 }
 
+function mousemove(d){
+    mouseX = d3.event.x;
+    mouseY = d3.event.y;
+}
+
 //Called from the scroll event handler and will zoom in or out
 function zoom(delta){
 	if (delta < 0){
@@ -411,10 +422,10 @@ function zoomOut(){
 function zoomIn(){
 	if (zoomLevel < 4){
 		zoomLevel += .25; 
-		g.transition()
+	   g.transition()
       	.duration(1000)
-      	.attr("transform", "scale(" + zoomLevel + ")");
-      }
+      	.attr("transform", "translate(" + width/2 + "," + height/2 + ")scale(" + zoomLevel + ")translate(" + -mouseX + "," + -mouseY + ")");
+    }
 }
 
 // Function for handling mouse wheel events from http://www.adomas.org/javascript-mouse-wheel/, edited for our use
