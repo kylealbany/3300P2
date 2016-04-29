@@ -48,9 +48,13 @@ body{
     height:500px;
     float:left;
     margin:0px 50px;
+    text-align:center;
+}
+#info-box h3,button,input{
+    margin-bottom:10px;
 }
 #slider{
-    height:150px;
+    height:100px;
 }
 #dynamic-data p{
     padding-top:30px;
@@ -79,6 +83,10 @@ body{
     y:0;
     height:35;
     fill:green;
+}
+#bonus-stats{
+    text-align:center;
+    
 }
 hr{
     margin-top:50px;

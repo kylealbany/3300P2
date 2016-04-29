@@ -26,26 +26,30 @@
         <h3> An Interactive View into American Political Alignments </h3>
     </div>
     <div id="paragraph">
-        <p> This is an introductory paragraph that will explain a few things before we go
-        into our main plot. It could potentially explain how to use the graph, and maybe 
-        even the rationale as to why we are doing this data visualization in the first place.
-        Mention that it only uses popular vote so the colors may be different from electoral vote maps. </p>
+        <p> In recent years, politicans have seemingly been catering to certain economic classes.
+            One could say that the Republicans cater to the wealthy, while the Democrats cater
+            to the less wealthy. But is this true? We made a map that shows the colloration between
+            Average Household Income, and which political party was primarily voted for in the 
+            2012 Presidential Election. </p>
     </div>
     <div id="mapholder">
         <div id="map">
         </div>
         <div id="info-box">
-            <p> Filtering Options </p>
+            <h3> Filtering Options </h3>
             <button onclick="zoomOut()">Zoom out</button>
             <button onclick="zoomIn()">Zoom in</button>
             <button onclick="showCounties()">Show counties only</button>
             <button onclick="showStates()">Show states only</button>
             <input type="text" name="lowIncome" id="lowIncome" value="0">
-            <input type="text" name="highIncome" id="highIncome" value="0">
+            <input type="text" name="highIncome" id="highIncome" value="150000">
             <button onclick="filterCounties()">Filter counties</button>
             <button onclick="resetFilter()">Reset filter</button>
-                <div id="slider"></div>
-                <div id="dynamic-data"></div>
+                <div id="dynamic-data">
+                    <p> Click on a state or county to get detailed info! </p>
+                    <p> You can filter by an income range by using the two boxes above.
+                    Just enter the range values, and click "Filter Counties".</p>
+                </div>
 
                  
         </div>
@@ -53,7 +57,10 @@
 </div>
 <div class="body-wrapper">
     <hr>
-    <p> Bonus stats if we want them... </p>
+    <div class="bonus-stats">
+        <h2> So was the correlation correct? </h2>
+        
+    </div>
 </div>
 
 <script>
@@ -420,6 +427,19 @@ function makeJSONArray(json) {
 	return array;
 }
 
+
+// Bonus stats
+    var histo_svg = d3.select("#bonus-stats");
+    histo_svg.append('svg')
+    .attr("height",600)
+    .attr("width",600)
+    .append('rect')
+    .attr('x',0)
+    .attr('y',0)
+    .attr("height",100)
+    .attr("width",100)
+    .attr("fill",'blue');
+    
 </script>
 </body>
 </html>
