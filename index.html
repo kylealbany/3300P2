@@ -92,10 +92,10 @@ d3.json("counties.json", function(error, data){
     }
     globalJSON = data
     globalArray = makeJSONArray(globalJSON);
-    drawMap();
+    drawMap(false);
 });
 
-function drawMap(){
+function drawMap(reset){
 d3.json("us.json", function(error, us) {
 
 	g.append("g")
@@ -155,7 +155,9 @@ d3.json("us.json", function(error, us) {
         	.style("stroke", "888888")
         	.on('mousedown.log', stateClicked);
 
-
+    if(reset==true){
+    	showCounties();
+    }
 });
 }
 
@@ -361,20 +363,7 @@ function filterCounties(){
 }
 
 function resetFilter(){
-	d3.json("us.json", function(error, us) {
-
-	g.append("g")
-	    .selectAll("path")
-    	    .data(topojson.feature(us, us.objects.counties).features)
-    	.enter().append("path")
-        	.attr("d", path)
-        	.attr("class", "counties")
-        	.style("fill", function(d) {
-        		return colorCounty(d);
-        	 })
-        	.style("stroke", "888888")
-        	.on('mousedown.log', countyClicked);
-	});
+	drawMap(true);
 }
 
 function colorCounty(d){
