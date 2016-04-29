@@ -40,7 +40,10 @@
             <button onclick="zoomIn()">Zoom in</button>
             <button onclick="showCounties()">Show counties only</button>
             <button onclick="showStates()">Show states only</button>
-            <button onclick="myFunction()">Filter counties</button>
+            <input type="text" name="lowIncome" id="lowIncome" value="0">
+            <input type="text" name="highIncome" id="highIncome" value="0">
+            <button onclick="filterCounties()">Filter counties</button>
+            <button onclick="resetFilter()">Reset filter</button>
                 <div id="slider"></div>
                 <div id="dynamic-data"></div>
 
@@ -56,8 +59,7 @@
 <script>
 var zoomLevel = 1;
 var globalData;
-var arrayDone = false;
-var globalArray; //~57000 possible codes, use to index vote data by county id
+var globalArray;
 
 var width = 1000;
 var height = 500;
@@ -101,49 +103,9 @@ d3.json("us.json", function(error, us) {
     	    .data(topojson.feature(us, us.objects.counties).features)
     	.enter().append("path")
         	.attr("d", path)
+        	.attr("class", "counties")
         	.style("fill", function(d) {
-        		var obj = globalArray[d.id];
-        		if(obj == null){
-        			return "cccccc";
-        		}
-        		var party1 = obj["Party1"];
-        		var party2 = obj["Party2"];
-        		var votes1 = parseInt(obj["Votes1"]);
-        		var votes2 = parseInt(obj["Votes2"]);
-        		var totalVotes = parseInt(obj["TOTAL VOTES CAST"]);
-        		if(party1 == "Dem"){
-        			//Dem win
-        			if(votes1>votes2){
-        				return blueScale((1.0*votes1)/totalVotes);
-        			}
-        			//GOP win
-        			else if(votes2>votes1){
-        				return redScale((1.0*votes2)/totalVotes);
-        			}
-        			//Other win
-        			else{
-						return "006600";
-        			}
-        		}
-        		else if(party1 == "GOP"){
-        			//GOP win
-        			if(votes1>votes2){
-        				return redScale((1.0*votes1)/totalVotes);
-        			}
-        			//Dem win
-        			else if(votes2>votes1){
-        				return blueScale((1.0*votes2)/totalVotes);
-        			}
-        			//Other win
-        			else{
-        				return "006600";
-        			}
-        		}
-        		else{
-        			console.log("Party didn't match");
-        			console.log(obj);
-        			console.log(d.id);
-        		}
+        		return colorCounty(d);
         	 })
         	.style("stroke", "888888")
         	.on('mousedown.log', countyClicked);
@@ -292,6 +254,7 @@ function countyClicked(d){
     infobox.html('');
     //BS Variables that need set later on
     var countyvar = obj["County Name"];
+    var stateName = obj["State Postal"];
     var income = obj["Median Household Income"];
     
     var totalVotes = parseInt(obj["TOTAL VOTES CAST"]);
@@ -313,7 +276,7 @@ function countyClicked(d){
 
     // Infobox writing
     infobox.append('p')
-        .text('County: ' + countyvar);
+        .text('County: ' + countyvar + ", " + stateName);
     infobox.append('p')
         .text('Obama: ' + Obamavar + "%")
         .append('svg')
@@ -340,11 +303,14 @@ function countyClicked(d){
 
 //Currently just a copy of the functionality for countyClicked to zoom back to state level
 function zoomOut(){
+	if (zoomLevel > 1){
+		zoomLevel -= .5;
+		g.transition()
+      	.duration(1000)
+      	.attr("transform", "scale(" + zoomLevel + ")");
 
-	zoomLevel -= .5;
-	g.transition()
-      .duration(1000)
-      .attr("transform", "scale(" + zoomLevel + ")");
+
+      }
 	// if(currentState != null){
 	// 	currentState.attr("display", "initial");
 	// }
@@ -355,10 +321,12 @@ function zoomOut(){
 }
 
 function zoomIn(){
-	zoomLevel += .5; 
-	g.transition()
-      .duration(1000)
-      .attr("transform", "scale(" + zoomLevel + ")");
+	if (zoomLevel < 4){
+		zoomLevel += .5; 
+		g.transition()
+      	.duration(1000)
+      	.attr("transform", "scale(" + zoomLevel + ")");
+      }
 }
 
 function showStates(){
@@ -369,6 +337,87 @@ function showStates(){
 function showCounties(){
 	g.selectAll(".states")
    		.attr("display", "none");
+}
+
+function filterCounties(){
+	showCounties();
+	var low = parseInt(document.getElementById("lowIncome").value);
+	var high = parseInt(document.getElementById("highIncome").value);
+
+	g.selectAll(".counties")
+		.style("fill", function(d){
+			var obj = globalArray[d.id];
+			if(obj != null){
+				var income = parseInt(obj["Median Household Income"].replace(/,/g, ""));
+				if(income > high || income < low){
+					return "#d4d4d4";
+				}
+				else{
+					return colorCounty(d);
+				}
+			}
+			return "#4a4a4a";
+		});
+}
+
+function resetFilter(){
+	d3.json("us.json", function(error, us) {
+
+	g.append("g")
+	    .selectAll("path")
+    	    .data(topojson.feature(us, us.objects.counties).features)
+    	.enter().append("path")
+        	.attr("d", path)
+        	.attr("class", "counties")
+        	.style("fill", function(d) {
+        		return colorCounty(d);
+        	 })
+        	.style("stroke", "888888")
+        	.on('mousedown.log', countyClicked);
+	});
+}
+
+function colorCounty(d){
+	var obj = globalArray[d.id];
+	if(obj == null){
+		return "cccccc";
+	}
+	var party1 = obj["Party1"];
+	var party2 = obj["Party2"];
+	var votes1 = parseInt(obj["Votes1"]);
+	var votes2 = parseInt(obj["Votes2"]);
+	var totalVotes = parseInt(obj["TOTAL VOTES CAST"]);
+	if(party1 == "Dem"){
+	   	//Dem win
+	    if(votes1>votes2){
+	        return blueScale((1.0*votes1)/totalVotes);
+	    }
+	    //GOP win
+	    else if(votes2>votes1){
+	        return redScale((1.0*votes2)/totalVotes);
+	    }
+	    //Other win
+	    else{
+	        return "006600";
+	    }
+	}
+	else if(party1 == "GOP"){
+	    //GOP win
+	    if(votes1>votes2){
+	    	return redScale((1.0*votes1)/totalVotes);
+	    }
+	    //Dem win
+	    else if(votes2>votes1){
+	        return blueScale((1.0*votes2)/totalVotes);
+	    }
+	    //Other win
+	    else{
+	        return "006600";
+	    }
+	}
+	else{
+	    console.log("Party didn't match");
+	}
 }
 
 //Not correct yet, issues because of string/int types and concatenation instead of adding
