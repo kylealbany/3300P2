@@ -415,7 +415,7 @@ function zoom(delta){
 
 function zoomOut(){
 	if (zoomLevel > 1){
-		zoomLevel -= .25;
+		zoomLevel -= 2;
 		g.transition()
       	.duration(1000)
       	.attr("transform", "scale(" + zoomLevel + ")");
@@ -423,12 +423,7 @@ function zoomOut(){
 }
 
 function zoomIn(){
-	if (zoomLevel < 4){
-		zoomLevel += .25; 
-	   g.transition()
-      	.duration(1000)
-      	.attr("transform", "translate(" + width/2 + "," + height/2 + ")scale(" + zoomLevel + ")translate(" + -mouseX + "," + -mouseY + ")");
-    }
+	return;
 }
 
 // Function for handling mouse wheel events from http://www.adomas.org/javascript-mouse-wheel/, edited for our use
