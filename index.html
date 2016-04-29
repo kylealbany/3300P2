@@ -41,8 +41,8 @@
             <button onclick="zoomIn()">Zoom in</button>
             <button onclick="showCounties()">Show counties only</button>
             <button onclick="showStates()">Show states only</button>
-            <input type="text" name="lowIncome" id="lowIncome" value="0">
-            <input type="text" name="highIncome" id="highIncome" value="150000">
+            <input type="text" name="lowIncome" id="lowIncome" placeholder="Min Income">
+            <input type="text" name="highIncome" id="highIncome" placeholder="Max Income">
             <button onclick="filterCounties()">Filter counties</button>
             <button onclick="resetFilter()">Reset filter</button>
                 <div id="dynamic-data">
@@ -57,9 +57,7 @@
 </div>
 <div class="body-wrapper">
     <hr>
-    <div class="bonus-stats">
-        <h2> So was the correlation correct? </h2>
-        
+    <p> CS 3300 Project 2: Craig Andres, Jonathan Wu, Kyle Albany </p>
     </div>
 </div>
 
@@ -462,20 +460,6 @@ function makeJSONArray(json) {
 	}
 	return array;
 }
-
-
-// Bonus stats
-    var histo_svg = d3.select("#bonus-stats");
-    histo_svg.append('svg')
-    .attr("height",600)
-    .attr("width",600)
-    .append('rect')
-    .attr('x',0)
-    .attr('y',0)
-    .attr("height",100)
-    .attr("width",100)
-    .attr("fill",'blue');
-    
 </script>
 </body>
 </html>
